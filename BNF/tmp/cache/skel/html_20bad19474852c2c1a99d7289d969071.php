@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Fri, 31 Mar 2017 12:42:15 GMT
- * Compile :   Fri, 31 Mar 2017 12:42:19 GMT
+ * Date :      Fri, 07 Apr 2017 13:52:21 GMT
+ * Compile :   Fri, 07 Apr 2017 13:57:00 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 3.210 ms
+// Temps de compilation total: 0.845 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -30,18 +30,18 @@ function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Black &mdash; Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>BnF-Projet</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  <!-- 
+  <!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -65,7 +65,7 @@ function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="' .
 find_in_path('css/animate.css') .
@@ -293,10 +293,10 @@ find_in_path('images/project-6.jpg') .
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</section>
-	
+
 	<section id="fh5co-pricing" data-section="pricing">
 		<div class="fh5co-pricing">
 			<div class="container">
@@ -385,7 +385,7 @@ find_in_path('images/project-6.jpg') .
 
 			</div>
 		</div>
-	</section>	
+	</section>
 
 	<section id="fh5co-team" data-section="team">
 		<div class="fh5co-team">
@@ -528,7 +528,7 @@ find_in_path('images/full_image_1.jpg') .
 ?'.'>
 	<!-- <div id="map" class="fh5co-map"></div> -->
 
-	
+
 	<!-- jQuery -->
 	<script src="' .
 find_in_path('js/jquery.min.js') .
@@ -560,7 +560,6 @@ find_in_path('js/main.js') .
 
 	</body>
 </html>
-
 ');
 
 	return analyse_resultat_skel('html_20bad19474852c2c1a99d7289d969071', $Cache, $page, 'squelettes/sommaire.html');
