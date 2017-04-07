@@ -533,3 +533,68 @@
 2017-04-07 12:43:44 ::1 (pid 4244) :Pub:!INFO: Creation du cache 5620c266eb908ed68805eef862ceb3a6.cache pour 86400 secondes
 2017-04-07 12:43:44 ::1 (pid 4244) :Pub:!INFO: Creation du cache 8010ccbfc97c7862f0e274ccb0862ed9.cache pour 86400 secondes
 2017-04-07 12:43:44 ::1 (pid 4244) :Pub:!INFO: Creation du cache 0e834eabaa9c7f38a2535d1f86619d93.cache pour 86400 secondes
+2017-04-07 15:15:14 ::1 (pid 818) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:15:14 ::1 (pid 815) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:15:14 ::1 (pid 812) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:19:28 ::1 (pid 812) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:19:28 ::1 (pid 788) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:19:29 ::1 (pid 1620) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:20:25 ::1 (pid 787) :Pri:!INFO: spip_connect: fichier de connexion '../config/connect.php' OK.
+2017-04-07 15:20:25 ::1 (pid 787) :Pri:ERREUR: Le serveur '' version 1 n'a pas 'select'
+2017-04-07 15:20:38 ::1 (pid 812) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:20:38 ::1 (pid 835) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:20:38 ::1 (pid 1620) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:21:46 ::1 (pid 787) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:21:46 ::1 (pid 1620) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:21:46 ::1 (pid 786) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:21:51 ::1 (pid 817) :Pri:!INFO: spip_connect: fichier de connexion '../config/connect.php' OK.
+2017-04-07 15:21:51 ::1 (pid 817) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:21:51 ::1 (pid 1654) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:21:51 ::1 (pid 815) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:28:20 ::1 (pid 1620) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:28:20 ::1 (pid 835) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:28:20 ::1 (pid 786) :Pub:!INFO: spip_connect: fichier de connexion 'config/connect.php' OK.
+2017-04-07 15:31:45 ::1 (pid 788) :Pub:!INFO: spip_connect: fichier de connexion '' non trouve
+2017-04-07 15:31:51 ::1 (pid 789) :Pub:!INFO: spip_connect: fichier de connexion '' non trouve
+2017-04-07 15:31:59 ::1 (pid 814) :Pub:!INFO: spip_connect: fichier de connexion '' non trouve
+2017-04-07 15:32:07 ::1 (pid 817) :Pub:!INFO: spip_connect: fichier de connexion '' non trouve
+2017-04-07 15:32:37 ::1 (pid 835) :Pub:!INFO: spip_connect: fichier de connexion '' non trouve
+2017-04-07 15:32:44 ::1 (pid 1620) :Pri:!INFO: spip_connect: fichier de connexion '' non trouve
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 3b9fdee78b5d75dffcc798ccd0f69eaa.cache pour 604800 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 3b061c6c66dd1053cc7050df4196258c.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache e0ec5f7125e7d7ab12eab09740882181.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache bbb5ca1b6e16ba7fc834da51adbbf582.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 68c13ce29554718b0889ea36cd75f9ee.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 77bf5505957d6704522efe7ab63edd78.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 0f50b90f61219b11db4d9907f7b24ed3.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 568f912f37f548dd2c48957fcfe306e3.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 3763e62f306bcf84282c6c470f881261.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 27dd428d289c653e0f88d85eeedf0589.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache f2eb8d73423ea4d43a948728267c7c08.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 6a3e1659345d280b2022e07a47993aee.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache facc1526c242206debdd4209fcc189e2.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 3cbfbbf25f4d3e2ca613811c7dd3b815.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache b741c09583c163d753a6e310e3d7ecbc.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 874f96dfa0b1c3118cbbd5575f10ed06.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache f098912b7b0287bd58ad7aaf44e91fab.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 65eb6a4bc0ca24aa2ee949e0c9831cdd.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache f2997c8349d2c586f38ab1e694e563ee.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 62e8f4cd2b2be539e3ceb38087cf3947.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache a3830e8b3ee5af0dd15730b32eea4077.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 1e332f443cb35992d04089d9245dcf69.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 33a1d79e2f00216c1ea7883e8f8f85e8.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 953b483cc14ef535aae83ae5a6a227ad.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 5a0440ca79d7c84dd32f4099e2c2bed5.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache e4c43807767ce25b844a77e56347fc30.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 506eac963cc74603a734c7dd4623e544.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache 82325fed163c4f18e42a56d244dad74c.cache pour 360000 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache e4c12201ce105b9fb73219aa58ff0f98.cache pour 604800 secondes
+2017-04-07 15:49:10 ::1 (pid 815) :Pri:!INFO: Creation du cache d44727c34f1c66e2b484711e02a0bbb2.cache pour 86400 secondes
+2017-04-07 15:49:14 ::1 (pid 817) :Pub:!INFO: Creation du cache 8ab85f77108a221b2b20dd35c2f6f3dc.cache pour 86400 secondes
+2017-04-07 15:49:14 ::1 (pid 817) :Pub:!INFO: Creation du cache 9f013ec85f59a8dc3f0fe3e855ceecb5.cache pour 86400 secondes
+2017-04-07 15:49:14 ::1 (pid 817) :Pub:!INFO: Creation du cache a0a838ab1fc9250f7db513b41ecb558f.cache pour 86400 secondes
+2017-04-07 15:49:18 ::1 (pid 1620) :Pri:!INFO: Creation du cache ce0bb603ca4b6e58a062b603a34b2047.cache pour 86400 secondes
+2017-04-07 15:50:18 ::1 (pid 788) :Pri:!INFO: Creation du cache f0ea37516e44f5009ca8cacbc5654246.cache pour 86400 secondes
+2017-04-07 15:50:31 ::1 (pid 786) :Pub:!INFO: Creation du cache 8ab85f77108a221b2b20dd35c2f6f3dc.cache pour 86400 secondes
+2017-04-07 15:50:31 ::1 (pid 786) :Pub:!INFO: Creation du cache 9f013ec85f59a8dc3f0fe3e855ceecb5.cache pour 86400 secondes
+2017-04-07 15:50:31 ::1 (pid 786) :Pub:!INFO: Creation du cache a0a838ab1fc9250f7db513b41ecb558f.cache pour 86400 secondes
