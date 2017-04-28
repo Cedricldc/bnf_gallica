@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Fri, 07 Apr 2017 13:52:21 GMT
- * Compile :   Fri, 07 Apr 2017 13:57:00 GMT
+ * Date :      Fri, 07 Apr 2017 13:58:05 GMT
+ * Compile :   Fri, 21 Apr 2017 08:38:26 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 0.845 ms
+// Temps de compilation total: 1.362 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -124,8 +124,8 @@ find_in_path('images/full_image_1.jpg') .
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h1 class="to-animate">Black - Template</h1>
-							<h2 class="to-animate">100% Free HTML5 Template. Licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0.</a> <br> Crafted with love by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates" class="fh5co-link">FREEHTML5.co</a></h2>
+							<h1 class="to-animate">LA FRANCE EN AMÉRIQUE</h1>
+							<h2 class="to-animate">Embarquez à la découverte du Canada</h2>
 						</div>
 					</div>
 				</div>

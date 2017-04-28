@@ -2,13 +2,13 @@
 
 /*
  * Squelette : ../plugins-dist/breves/prive/style_prive_plugin_breves.html
- * Date :      Fri, 30 Sep 2016 21:38:54 GMT
- * Compile :   Fri, 06 Jan 2017 13:24:57 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:02 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../plugins-dist/breves/prive/style_prive_plugin_breves.html
-// Temps de compilation total: 2.215 ms
+// Temps de compilation total: 0.593 ms
 //
 
 function html_40de9e3205c0543b0b58cc469f6040dd($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

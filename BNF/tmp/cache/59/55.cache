@@ -1,6 +1,0 @@
-a:2:{s:9:"nom_cache";s:38:"59554c908f49f0725344474069ef0244.cache";s:6:"valeur";a:12:{s:9:"squelette";s:37:"html_0acfb1d6fd08461a6c83485d03693d0d";s:6:"source";s:34:"squelettes-dist/inclure/forum.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:38:"59554c908f49f0725344474069ef0244.cache";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:5:"texte";s:50:"
-
-<a href="#forum" name="forum" id="forum"></a>
-
-
-";s:5:"notes";s:0:"";s:8:"contexte";a:6:{s:10:"id_article";s:1:"2";s:4:"lang";s:2:"fr";s:4:"date";s:19:"2017-01-06 13:44:20";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2017-01-06 13:44:20";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1483710260;s:2:"gz";b:0;s:3:"sig";i:727041322;}}

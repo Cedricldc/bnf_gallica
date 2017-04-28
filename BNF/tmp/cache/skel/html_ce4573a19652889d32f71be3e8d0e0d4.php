@@ -2,13 +2,13 @@
 
 /*
  * Squelette : ../prive/themes/spip/theme.css.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:24:57 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../prive/themes/spip/theme.css.html
-// Temps de compilation total: 10.772 ms
+// Temps de compilation total: 2.339 ms
 //
 
 function html_ce4573a19652889d32f71be3e8d0e0d4($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

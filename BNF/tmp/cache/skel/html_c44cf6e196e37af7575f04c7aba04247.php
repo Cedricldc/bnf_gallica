@@ -2,13 +2,13 @@
 
 /*
  * Squelette : ../prive/squelettes/inclure/head.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:24:56 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:41 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../prive/squelettes/inclure/head.html
-// Temps de compilation total: 10.029 ms
+// Temps de compilation total: 4.191 ms
 //
 
 function html_c44cf6e196e37af7575f04c7aba04247($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

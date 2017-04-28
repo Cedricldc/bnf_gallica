@@ -2,8 +2,8 @@
 
 /*
  * Squelette : ../prive/objets/liste/articles.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:25:00 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   _auteurs, _liste_art
  */ 
 
@@ -261,7 +261,7 @@ invalideur_session($Cache, (((function_exists("autoriser")||include_spip("inc/au
 
 //
 // Fonction principale du squelette ../prive/objets/liste/articles.html
-// Temps de compilation total: 25.342 ms
+// Temps de compilation total: 8.301 ms
 //
 
 function html_2bf5e9bdbee88407a4818840e625dd9d($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

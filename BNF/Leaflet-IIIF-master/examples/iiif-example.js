@@ -6,7 +6,7 @@ map = L.map('map', {
   zoom: 0
 });
 
-stanfordMlk = L.tileLayer.iiif('https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', {
+stanfordMlk = L.tileLayer.iiif('http://gallica.bnf.fr/iiif/ark:/12148/btv1b53016830v/f1/info.json', {
   attribution: '<a href="http://searchworks.stanford.edu/view/hg676jb4964">Martin Luther King Jr. & Joan Baez march to integrate schools, Grenada, MS, 1966</a>',
   maxZoom: 5
 }).addTo(map);

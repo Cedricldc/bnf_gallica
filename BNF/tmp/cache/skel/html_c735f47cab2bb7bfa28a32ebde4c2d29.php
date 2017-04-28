@@ -2,8 +2,8 @@
 
 /*
  * Squelette : ../prive/squelettes/navigation/accueil.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:25:00 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   _restreintes
  */ 
 
@@ -94,7 +94,7 @@ interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, 
 
 //
 // Fonction principale du squelette ../prive/squelettes/navigation/accueil.html
-// Temps de compilation total: 15.980 ms
+// Temps de compilation total: 5.253 ms
 //
 
 function html_c735f47cab2bb7bfa28a32ebde4c2d29($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

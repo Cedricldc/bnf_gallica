@@ -1,4 +1,4 @@
-a:2:{s:9:"nom_cache";s:38:"3b9fdee78b5d75dffcc798ccd0f69eaa.cache";s:6:"valeur";a:12:{s:9:"squelette";s:37:"html_3002936b70d02a85d3d71dc952115155";s:6:"source";s:53:"plugins-dist/porte_plume/barre_outils_icones.css.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:38:"3b9fdee78b5d75dffcc798ccd0f69eaa.cache";}s:7:"entetes";a:3:{s:12:"X-Spip-Cache";s:6:"604800";s:12:"Content-Type";s:23:"text/css; charset=utf-8";s:4:"Vary";s:15:"Accept-Encoding";}s:5:"duree";i:604800;s:5:"texte";s:5838:"
+a:2:{s:9:"nom_cache";s:38:"3b9fdee78b5d75dffcc798ccd0f69eaa.cache";s:6:"valeur";a:12:{s:9:"squelette";s:37:"html_3002936b70d02a85d3d71dc952115155";s:6:"source";s:56:"../plugins-dist/porte_plume/barre_outils_icones.css.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:38:"3b9fdee78b5d75dffcc798ccd0f69eaa.cache";}s:7:"entetes";a:3:{s:12:"X-Spip-Cache";s:6:"604800";s:12:"Content-Type";s:23:"text/css; charset=utf-8";s:4:"Vary";s:15:"Accept-Encoding";}s:5:"duree";i:604800;s:5:"texte";s:5838:"
 .markItUp .outil_header1>a>em {background-image:url(//localhost:8888/cdnl_16-17/BNF/plugins-dist/porte_plume/icones_barre/spt-v1.png);background-position:-10px -226px}
 .markItUp .outil_bold>a>em {background-image:url(//localhost:8888/cdnl_16-17/BNF/plugins-dist/porte_plume/icones_barre/spt-v1.png);background-position:-10px -478px}
 .markItUp .outil_italic>a>em {background-image:url(//localhost:8888/cdnl_16-17/BNF/plugins-dist/porte_plume/icones_barre/spt-v1.png);background-position:-10px -586px}
@@ -53,4 +53,4 @@ a:2:{s:9:"nom_cache";s:38:"3b9fdee78b5d75dffcc798ccd0f69eaa.cache";s:6:"valeur";
 		position:fixed;
 		left:75%;
 }
-";s:5:"notes";s:0:"";s:8:"contexte";a:5:{s:4:"lang";s:2:"fr";s:4:"date";s:19:"2017-04-07 15:49:10";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2017-04-07 15:49:10";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1491572950;s:2:"gz";b:0;s:3:"sig";i:3286311774;}}
+";s:5:"notes";s:0:"";s:8:"contexte";a:5:{s:4:"lang";s:2:"fr";s:4:"date";s:19:"2017-04-21 11:07:41";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2017-04-21 11:07:41";s:18:"date_redac_default";b:1;}s:12:"lastmodified";i:1492765661;s:2:"gz";b:0;s:3:"sig";i:3286311774;}}

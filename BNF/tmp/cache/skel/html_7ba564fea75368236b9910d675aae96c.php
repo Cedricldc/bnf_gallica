@@ -2,8 +2,8 @@
 
 /*
  * Squelette : ../prive/themes/spip/lists.css.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:24:57 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   _objets, _objets2
  */ 
 
@@ -124,7 +124,7 @@ interdire_scripts(entites_html(table_valeur(@$Pile[0], (string)'left', null),tru
 
 //
 // Fonction principale du squelette ../prive/themes/spip/lists.css.html
-// Temps de compilation total: 9.891 ms
+// Temps de compilation total: 4.147 ms
 //
 
 function html_7ba564fea75368236b9910d675aae96c($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

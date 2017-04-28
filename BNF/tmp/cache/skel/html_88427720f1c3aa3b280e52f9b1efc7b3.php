@@ -2,13 +2,13 @@
 
 /*
  * Squelette : ../plugins-dist/forum/prive/style_prive_plugin_forum.html
- * Date :      Fri, 30 Sep 2016 21:38:56 GMT
- * Compile :   Fri, 06 Jan 2017 13:24:58 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:02 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../plugins-dist/forum/prive/style_prive_plugin_forum.html
-// Temps de compilation total: 9.467 ms
+// Temps de compilation total: 2.119 ms
 //
 
 function html_88427720f1c3aa3b280e52f9b1efc7b3($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

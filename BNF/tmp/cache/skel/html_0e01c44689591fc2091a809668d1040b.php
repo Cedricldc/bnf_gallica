@@ -2,13 +2,13 @@
 
 /*
  * Squelette : ../prive/themes/spip/bando.css.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:24:57 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:41 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../prive/themes/spip/bando.css.html
-// Temps de compilation total: 9.167 ms
+// Temps de compilation total: 2.953 ms
 //
 
 function html_0e01c44689591fc2091a809668d1040b($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

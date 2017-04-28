@@ -2,8 +2,8 @@
 
 /*
  * Squelette : ../prive/objets/liste/auteurs_enligne.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:25:00 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   _enligne
  */ 
 
@@ -91,7 +91,7 @@ interdire_scripts(typo(supprimer_numero($Pile[$SP]['nom']), "TYPO", $connect, $P
 
 //
 // Fonction principale du squelette ../prive/objets/liste/auteurs_enligne.html
-// Temps de compilation total: 4.470 ms
+// Temps de compilation total: 1.648 ms
 //
 
 function html_42ff770a558278a0a2a8b18a0d196c13($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

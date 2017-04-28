@@ -2,8 +2,8 @@
 
 /*
  * Squelette : ../prive/squelettes/inclure/barre-nav.html
- * Date :      Fri, 30 Sep 2016 21:38:32 GMT
- * Compile :   Fri, 06 Jan 2017 13:25:00 GMT
+ * Date :      Fri, 07 Apr 2017 13:07:03 GMT
+ * Compile :   Fri, 21 Apr 2017 09:07:42 GMT
  * Boucles :   _sous, _boutons, _creersous, _creer, _collaborersous, _collaborer
  */ 
 
@@ -344,7 +344,7 @@ function BOUCLE_collaborerhtml_12eca9bc02ead06eac7ddeaf4d3d84ac(&$Cache, &$Pile,
 
 //
 // Fonction principale du squelette ../prive/squelettes/inclure/barre-nav.html
-// Temps de compilation total: 22.270 ms
+// Temps de compilation total: 4.261 ms
 //
 
 function html_12eca9bc02ead06eac7ddeaf4d3d84ac($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
