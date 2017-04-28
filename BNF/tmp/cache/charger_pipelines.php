@@ -1,6 +1,20 @@
 <?php
 
 if (defined('_ECRIRE_INC_VERSION')) {
+// Pipeline styliser 
+function execute_pipeline_styliser(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_RESTREINT.'/inc/cvt_multietapes.php');
+include_once_check(_ROOT_PLUGINS_DIST.'vertebres/vertebres_pipelines.php');
+$inc=true;
+}
+$val = minipipe('cvtmulti_styliser', $val);
+$val = minipipe('vertebres_styliser', $val);
+$val = minipipe('squelettes_par_rubrique_styliser_par_rubrique', $val);
+$val = minipipe('squelettes_par_rubrique_styliser_par_langue', $val);
+return $val;
+}
 // Pipeline accueil_encours 
 function execute_pipeline_accueil_encours(&$val){
 static $inc=null;
@@ -929,20 +943,6 @@ include_once_check(_ROOT_RESTREINT.'/inc/pipelines.php');
 $inc=true;
 }
 $val = minipipe('f_recuperer_fond', $val);
-return $val;
-}
-// Pipeline styliser 
-function execute_pipeline_styliser(&$val){
-static $inc=null;
-if (!$inc){
-include_once_check(_ROOT_RESTREINT.'/inc/cvt_multietapes.php');
-include_once_check(_ROOT_PLUGINS_DIST.'vertebres/vertebres_pipelines.php');
-$inc=true;
-}
-$val = minipipe('cvtmulti_styliser', $val);
-$val = minipipe('vertebres_styliser', $val);
-$val = minipipe('squelettes_par_rubrique_styliser_par_rubrique', $val);
-$val = minipipe('squelettes_par_rubrique_styliser_par_langue', $val);
 return $val;
 }
 // Pipeline traduire 
