@@ -7,12 +7,70 @@ static $inc=null;
 if (!$inc){
 include_once_check(_ROOT_RESTREINT.'/inc/cvt_multietapes.php');
 include_once_check(_ROOT_PLUGINS_DIST.'vertebres/vertebres_pipelines.php');
+include_once_check(_ROOT_PLUGINS.'auto/saisies/v2.11.2/saisies_pipelines.php');
 $inc=true;
 }
 $val = minipipe('cvtmulti_styliser', $val);
 $val = minipipe('vertebres_styliser', $val);
+$val = minipipe('saisies_styliser', $val);
 $val = minipipe('squelettes_par_rubrique_styliser_par_rubrique', $val);
 $val = minipipe('squelettes_par_rubrique_styliser_par_langue', $val);
+return $val;
+}
+// Pipeline declarer_tables_objets_sql 
+function execute_pipeline_declarer_tables_objets_sql(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS_DIST.'forum/base/forum.php');
+include_once_check(_ROOT_PLUGINS_DIST.'mots/base/mots.php');
+include_once_check(_ROOT_PLUGINS_DIST.'organiseur/base/organiseur.php');
+include_once_check(_ROOT_PLUGINS_DIST.'petitions/base/petitions.php');
+include_once_check(_ROOT_PLUGINS_DIST.'revisions/base/revisions.php');
+include_once_check(_ROOT_PLUGINS_DIST.'sites/base/sites.php');
+include_once_check(_ROOT_PLUGINS_DIST.'svp/base/svp_declarer.php');
+include_once_check(_ROOT_PLUGINS_DIST.'breves/base/breves.php');
+include_once_check(_ROOT_PLUGINS_DIST.'medias/base/medias.php');
+$inc=true;
+}
+$val = minipipe('forum_declarer_tables_objets_sql', $val);
+$val = minipipe('mots_declarer_tables_objets_sql', $val);
+$val = minipipe('organiseur_declarer_tables_objets_sql', $val);
+$val = minipipe('petitions_declarer_tables_objets_sql', $val);
+$val = minipipe('revisions_declarer_tables_objets_sql', $val);
+$val = minipipe('sites_declarer_tables_objets_sql', $val);
+$val = minipipe('svp_declarer_tables_objets_sql', $val);
+$val = minipipe('breves_declarer_tables_objets_sql', $val);
+$val = minipipe('medias_declarer_tables_objets_sql', $val);
+$val = minipipe('cextras_declarer_champs_apres_les_autres', $val);
+return $val;
+}
+// Pipeline declarer_tables_interfaces 
+function execute_pipeline_declarer_tables_interfaces(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS_DIST.'forum/base/forum.php');
+include_once_check(_ROOT_PLUGINS_DIST.'mots/base/mots.php');
+include_once_check(_ROOT_PLUGINS_DIST.'organiseur/base/organiseur.php');
+include_once_check(_ROOT_PLUGINS_DIST.'petitions/base/petitions.php');
+include_once_check(_ROOT_PLUGINS_DIST.'revisions/base/revisions.php');
+include_once_check(_ROOT_PLUGINS_DIST.'sites/base/sites.php');
+include_once_check(_ROOT_PLUGINS_DIST.'svp/base/svp_declarer.php');
+include_once_check(_ROOT_PLUGINS_DIST.'urls_etendues/base/urls.php');
+include_once_check(_ROOT_PLUGINS_DIST.'breves/base/breves.php');
+include_once_check(_ROOT_PLUGINS_DIST.'medias/base/medias.php');
+$inc=true;
+}
+$val = minipipe('forum_declarer_tables_interfaces', $val);
+$val = minipipe('mots_declarer_tables_interfaces', $val);
+$val = minipipe('organiseur_declarer_tables_interfaces', $val);
+$val = minipipe('petitions_declarer_tables_interfaces', $val);
+$val = minipipe('revisions_declarer_tables_interfaces', $val);
+$val = minipipe('sites_declarer_tables_interfaces', $val);
+$val = minipipe('svp_declarer_tables_interfaces', $val);
+$val = minipipe('urls_declarer_tables_interfaces', $val);
+$val = minipipe('breves_declarer_tables_interfaces', $val);
+$val = minipipe('medias_declarer_tables_interfaces', $val);
+$val = minipipe('cextras_declarer_champs_interfaces_apres_les_autres', $val);
 return $val;
 }
 // Pipeline accueil_encours 
@@ -47,6 +105,7 @@ static $inc=null;
 if (!$inc){
 include_once_check(_ROOT_RESTREINT.'/inc/pipelines.php');
 include_once_check(_ROOT_PLUGINS.'auto/skeleditor/v2.7.11/skeleditor_options.php');
+include_once_check(_ROOT_PLUGINS.'auto/saisies/v2.11.2/saisies_pipelines.php');
 $inc=true;
 }
 $val = minipipe('f_surligne', $val);
@@ -54,6 +113,7 @@ $val = minipipe('f_tidy', $val);
 $val = minipipe('f_admin', $val);
 $val = minipipe('f_queue', $val);
 $val = minipipe('skeleditor_affichage_final', $val);
+$val = minipipe('saisies_affichage_final', $val);
 $val = minipipe('compresseur_affichage_final', $val);
 return $val;
 }
@@ -117,6 +177,12 @@ return $val;
 }
 // Pipeline afficher_contenu_objet 
 function execute_pipeline_afficher_contenu_objet(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
+$inc=true;
+}
+$val = minipipe('cextras_afficher_contenu_objet', $val);
 return $val;
 }
 // Pipeline afficher_nombre_objets_associes_a 
@@ -265,6 +331,8 @@ include_once_check(_ROOT_PLUGINS_DIST.'statistiques/stats_autoriser.php');
 include_once_check(_ROOT_PLUGINS_DIST.'svp/svp_pipelines.php');
 include_once_check(_ROOT_PLUGINS_DIST.'urls_etendues/urls_pipeline.php');
 include_once_check(_ROOT_PLUGINS.'auto/skeleditor/v2.7.11/inc/skeleditor_autoriser.php');
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/inc/cextras_autoriser.php');
+include_once_check(_ROOT_PLUGINS.'auto/iextras/v3.5.2/inc/iextras_autoriser.php');
 include_once_check(_ROOT_PLUGINS_DIST.'breves/breves_autoriser.php');
 include_once_check(_ROOT_PLUGINS_DIST.'medias/medias_autoriser.php');
 $inc=true;
@@ -280,6 +348,8 @@ $val = minipipe('stats_autoriser', $val);
 $val = minipipe('svp_autoriser', $val);
 $val = minipipe('urls_autoriser', $val);
 $val = minipipe('skeleditor_autoriser', $val);
+$val = minipipe('cextras_autoriser', $val);
+$val = minipipe('iextras_autoriser', $val);
 $val = minipipe('breves_autoriser', $val);
 $val = minipipe('medias_autoriser', $val);
 return $val;
@@ -382,60 +452,6 @@ return $val;
 function execute_pipeline_declarer_filtres_squelettes(&$val){
 return $val;
 }
-// Pipeline declarer_tables_interfaces 
-function execute_pipeline_declarer_tables_interfaces(&$val){
-static $inc=null;
-if (!$inc){
-include_once_check(_ROOT_PLUGINS_DIST.'forum/base/forum.php');
-include_once_check(_ROOT_PLUGINS_DIST.'mots/base/mots.php');
-include_once_check(_ROOT_PLUGINS_DIST.'organiseur/base/organiseur.php');
-include_once_check(_ROOT_PLUGINS_DIST.'petitions/base/petitions.php');
-include_once_check(_ROOT_PLUGINS_DIST.'revisions/base/revisions.php');
-include_once_check(_ROOT_PLUGINS_DIST.'sites/base/sites.php');
-include_once_check(_ROOT_PLUGINS_DIST.'svp/base/svp_declarer.php');
-include_once_check(_ROOT_PLUGINS_DIST.'urls_etendues/base/urls.php');
-include_once_check(_ROOT_PLUGINS_DIST.'breves/base/breves.php');
-include_once_check(_ROOT_PLUGINS_DIST.'medias/base/medias.php');
-$inc=true;
-}
-$val = minipipe('forum_declarer_tables_interfaces', $val);
-$val = minipipe('mots_declarer_tables_interfaces', $val);
-$val = minipipe('organiseur_declarer_tables_interfaces', $val);
-$val = minipipe('petitions_declarer_tables_interfaces', $val);
-$val = minipipe('revisions_declarer_tables_interfaces', $val);
-$val = minipipe('sites_declarer_tables_interfaces', $val);
-$val = minipipe('svp_declarer_tables_interfaces', $val);
-$val = minipipe('urls_declarer_tables_interfaces', $val);
-$val = minipipe('breves_declarer_tables_interfaces', $val);
-$val = minipipe('medias_declarer_tables_interfaces', $val);
-return $val;
-}
-// Pipeline declarer_tables_objets_sql 
-function execute_pipeline_declarer_tables_objets_sql(&$val){
-static $inc=null;
-if (!$inc){
-include_once_check(_ROOT_PLUGINS_DIST.'forum/base/forum.php');
-include_once_check(_ROOT_PLUGINS_DIST.'mots/base/mots.php');
-include_once_check(_ROOT_PLUGINS_DIST.'organiseur/base/organiseur.php');
-include_once_check(_ROOT_PLUGINS_DIST.'petitions/base/petitions.php');
-include_once_check(_ROOT_PLUGINS_DIST.'revisions/base/revisions.php');
-include_once_check(_ROOT_PLUGINS_DIST.'sites/base/sites.php');
-include_once_check(_ROOT_PLUGINS_DIST.'svp/base/svp_declarer.php');
-include_once_check(_ROOT_PLUGINS_DIST.'breves/base/breves.php');
-include_once_check(_ROOT_PLUGINS_DIST.'medias/base/medias.php');
-$inc=true;
-}
-$val = minipipe('forum_declarer_tables_objets_sql', $val);
-$val = minipipe('mots_declarer_tables_objets_sql', $val);
-$val = minipipe('organiseur_declarer_tables_objets_sql', $val);
-$val = minipipe('petitions_declarer_tables_objets_sql', $val);
-$val = minipipe('revisions_declarer_tables_objets_sql', $val);
-$val = minipipe('sites_declarer_tables_objets_sql', $val);
-$val = minipipe('svp_declarer_tables_objets_sql', $val);
-$val = minipipe('breves_declarer_tables_objets_sql', $val);
-$val = minipipe('medias_declarer_tables_objets_sql', $val);
-return $val;
-}
 // Pipeline declarer_tables_principales 
 function execute_pipeline_declarer_tables_principales(&$val){
 static $inc=null;
@@ -504,6 +520,12 @@ return $val;
 }
 // Pipeline editer_contenu_objet 
 function execute_pipeline_editer_contenu_objet(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
+$inc=true;
+}
+$val = minipipe('cextras_editer_contenu_objet', $val);
 return $val;
 }
 // Pipeline exec_init 
@@ -522,12 +544,14 @@ include_once_check(_ROOT_RESTREINT.'/inc/cvt_multietapes.php');
 include_once_check(_ROOT_RESTREINT.'/inc/cvt_configurer.php');
 include_once_check(_ROOT_RESTREINT.'/inc/cvt_autosave.php');
 include_once_check(_ROOT_PLUGINS_DIST.'revisions/inc/revisions_pipeline.php');
+include_once_check(_ROOT_PLUGINS.'auto/saisies/v2.11.2/saisies_pipelines.php');
 $inc=true;
 }
 $val = minipipe('cvtmulti_formulaire_charger', $val);
 $val = minipipe('cvtconf_formulaire_charger', $val);
 $val = minipipe('cvtautosave_formulaire_charger', $val);
 $val = minipipe('revisions_formulaire_charger', $val);
+$val = minipipe('saisies_formulaire_charger', $val);
 return $val;
 }
 // Pipeline formulaire_verifier 
@@ -535,9 +559,13 @@ function execute_pipeline_formulaire_verifier(&$val){
 static $inc=null;
 if (!$inc){
 include_once_check(_ROOT_RESTREINT.'/inc/cvt_multietapes.php');
+include_once_check(_ROOT_PLUGINS.'auto/saisies/v2.11.2/saisies_pipelines.php');
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
 $inc=true;
 }
 $val = minipipe('cvtmulti_formulaire_verifier', $val);
+$val = minipipe('saisies_formulaire_verifier', $val);
+$val = minipipe('cextras_formulaire_verifier', $val);
 return $val;
 }
 // Pipeline formulaire_traiter 
@@ -554,6 +582,12 @@ return $val;
 }
 // Pipeline formulaire_fond 
 function execute_pipeline_formulaire_fond(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
+$inc=true;
+}
+$val = minipipe('cextras_formulaire_fond', $val);
 return $val;
 }
 // Pipeline formulaire_admin 
@@ -574,6 +608,7 @@ include_once_check(_ROOT_PLUGINS_DIST.'jquery_ui/jqueryui_pipelines.php');
 include_once_check(_ROOT_PLUGINS_DIST.'mediabox/mediabox_pipelines.php');
 include_once_check(_ROOT_PLUGINS_DIST.'organiseur/organiseur_pipelines.php');
 include_once_check(_ROOT_PLUGINS_DIST.'porte_plume/porte_plume_pipelines.php');
+include_once_check(_ROOT_PLUGINS.'auto/saisies/v2.11.2/saisies_pipelines.php');
 include_once_check(_ROOT_PLUGINS_DIST.'compresseur/compresseur_pipeline.php');
 $inc=true;
 }
@@ -583,6 +618,7 @@ $val = minipipe('jqueryui_header_prive', $val);
 $val = minipipe('mediabox_insert_head', $val);
 $val = minipipe('organiseur_header_prive', $val);
 $val = minipipe('porte_plume_insert_head_prive', $val);
+$val = minipipe('saisies_header_prive', $val);
 $val = minipipe('compresseur_header_prive', $val);
 return $val;
 }
@@ -812,9 +848,11 @@ function execute_pipeline_pre_edition(&$val){
 static $inc=null;
 if (!$inc){
 include_once_check(_ROOT_PLUGINS_DIST.'revisions/inc/revisions_pipeline.php');
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
 $inc=true;
 }
 $val = minipipe('revisions_pre_edition', $val);
+$val = minipipe('cextras_pre_edition', $val);
 return $val;
 }
 // Pipeline pre_edition_lien 
@@ -1077,9 +1115,11 @@ return $val;
 function execute_pipeline_revisions_chercher_label(&$val){
 static $inc=null;
 if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
 include_once_check(_ROOT_PLUGINS_DIST.'medias/medias_pipelines.php');
 $inc=true;
 }
+$val = minipipe('cextras_revisions_chercher_label', $val);
 $val = minipipe('medias_revisions_chercher_label', $val);
 return $val;
 }
@@ -1095,12 +1135,56 @@ return $val;
 function execute_pipeline_delete_statistiques(&$val){
 return $val;
 }
-// Pipeline pre_echappe_html_propre 
-function execute_pipeline_pre_echappe_html_propre(&$val){
+// Pipeline verifier 
+function execute_pipeline_verifier(&$val){
 return $val;
 }
-// Pipeline post_echappe_html_propre 
-function execute_pipeline_post_echappe_html_propre(&$val){
+// Pipeline saisies_autonomes 
+function execute_pipeline_saisies_autonomes(&$val){
+return $val;
+}
+// Pipeline saisies_construire_formulaire_config 
+function execute_pipeline_saisies_construire_formulaire_config(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/iextras/v3.5.2/inc/iextras.php');
+$inc=true;
+}
+$val = minipipe('iextras_saisies_construire_formulaire_config', $val);
+return $val;
+}
+// Pipeline formulaire_saisies 
+function execute_pipeline_formulaire_saisies(&$val){
+return $val;
+}
+// Pipeline declarer_champs_extras 
+function execute_pipeline_declarer_champs_extras(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/iextras/v3.5.2/base/iextras.php');
+$inc=true;
+}
+$val = minipipe('iextras_declarer_champs_extras', $val);
+return $val;
+}
+// Pipeline crayons_controleur 
+function execute_pipeline_crayons_controleur(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
+$inc=true;
+}
+$val = minipipe('cextras_crayons_controleur', $val);
+return $val;
+}
+// Pipeline crayons_verifier 
+function execute_pipeline_crayons_verifier(&$val){
+static $inc=null;
+if (!$inc){
+include_once_check(_ROOT_PLUGINS.'auto/cextras/v3.11.0/cextras_pipelines.php');
+$inc=true;
+}
+$val = minipipe('cextras_crayons_verifier', $val);
 return $val;
 }
 // Pipeline document_desc_actions 
@@ -1143,6 +1227,14 @@ return $val;
 }
 // Pipeline medias_documents_visibles 
 function execute_pipeline_medias_documents_visibles(&$val){
+return $val;
+}
+// Pipeline pre_echappe_html_propre 
+function execute_pipeline_pre_echappe_html_propre(&$val){
+return $val;
+}
+// Pipeline post_echappe_html_propre 
+function execute_pipeline_post_echappe_html_propre(&$val){
 return $val;
 }
 }

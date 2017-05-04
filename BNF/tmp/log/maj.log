@@ -85,3 +85,10 @@
 2017-01-06 13:24:30 ::1 (pid 3268) :Pri:!INFO: medias_base_version_maj_1.2.7: ok
 2017-01-06 13:24:30 ::1 (pid 3268) :Pri:!INFO: meta medias_base_version: 1.2.7 en 0 secondes
 2017-01-06 13:24:30 ::1 (pid 3268) :Pri:!INFO: MAJ terminee. medias_base_version: 1.2.7
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: maj meta iextras_base_version_maj_init etape 0: iextras_upgrade_to_saisies 
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: iextras_base_version_maj_init: ok
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: meta iextras_base_version: init en 0 secondes
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: maj meta iextras_base_version_maj_1.0.0 etape 0: inc_config_dist 
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: iextras_base_version_maj_1.0.0: ok
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: meta iextras_base_version: 1.0.0 en 0 secondes
+2017-05-04 13:42:50 ::1 (pid 708) :Pri:!INFO: MAJ terminee. iextras_base_version: 1.0.0

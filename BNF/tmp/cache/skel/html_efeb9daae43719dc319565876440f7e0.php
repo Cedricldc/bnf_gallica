@@ -2,13 +2,13 @@
 
 /*
  * Squelette : ../plugins/auto/skeleditor/v2.7.11/prive/squelettes/navigation/skeleditor.html
- * Date :      Fri, 07 Apr 2017 13:07:03 GMT
- * Compile :   Fri, 21 Apr 2017 09:08:19 GMT
+ * Date :      Fri, 28 Apr 2017 15:18:12 GMT
+ * Compile :   Thu, 04 May 2017 08:52:34 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../plugins/auto/skeleditor/v2.7.11/prive/squelettes/navigation/skeleditor.html
-// Temps de compilation total: 1.940 ms
+// Temps de compilation total: 2.265 ms
 //
 
 function html_efeb9daae43719dc319565876440f7e0($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

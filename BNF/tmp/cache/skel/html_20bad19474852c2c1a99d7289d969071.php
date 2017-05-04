@@ -2,13 +2,226 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Fri, 07 Apr 2017 13:58:05 GMT
- * Compile :   Fri, 28 Apr 2017 12:46:06 GMT
- * Boucles :   
+ * Date :      Fri, 28 Apr 2017 15:30:58 GMT
+ * Compile :   Thu, 04 May 2017 11:55:27 GMT
+ * Boucles :   mcautTeam, autTeam, team
  */ 
+
+function BOUCLEmcautTeamhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &$doublons, &$Numrows, $SP) {
+
+	static $command = array();
+	static $connect;
+	$command['connect'] = $connect = '';
+	if (!isset($command['table'])) {
+		$command['table'] = 'mots';
+		$command['id'] = 'mcautTeam';
+		$command['from'] = array('mots' => 'spip_mots','L1' => 'spip_mots_liens');
+		$command['type'] = array();
+		$command['groupby'] = array();
+		$command['select'] = array("mots.titre");
+		$command['orderby'] = array();
+		$command['join'] = array('L1' => array('mots','id_mot'));
+		$command['limit'] = '';
+		$command['having'] = 
+			array();
+	}
+	$command['where'] = 
+			array(
+			array('=', 'L1.id_objet', sql_quote($Pile[$SP]['id_auteur'], '', '')), 
+			array('=', 'L1.objet', sql_quote('auteur')), 
+			array('=', 'mots.id_groupe', "2"));
+	if (defined("_BOUCLE_PROFILER")) $timer = time()+microtime();
+	$t0 = "";
+	// REQUETE
+	$iter = IterFactory::create(
+		"SQL",
+		$command,
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','mcautTeam',281,$GLOBALS['spip_lang'])
+	);
+	if (!$iter->err()) {
+	$SP++;
+	// RESULTATS
+	while ($Pile[$SP]=$iter->fetch()) {
+
+		$t1 = (
+'
+							      ' .
+interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, $Pile[0])) .
+'
+							      ');
+		$t0 .= ((strlen($t1) && strlen($t0)) ? ',' : '') . $t1;
+	}
+	$iter->free();
+	}
+	if (defined("_BOUCLE_PROFILER")
+	AND 1000*($timer = (time()+microtime())-$timer) > _BOUCLE_PROFILER)
+		spip_log(intval(1000*$timer)."ms BOUCLEmcautTeam @ squelettes/sommaire.html","profiler"._LOG_AVERTISSEMENT);
+	return $t0;
+}
+
+
+function BOUCLEautTeamhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &$doublons, &$Numrows, $SP) {
+
+	static $command = array();
+	static $connect;
+	$command['connect'] = $connect = '';
+	if (!isset($command['table'])) {
+		$command['table'] = 'auteurs';
+		$command['id'] = 'autTeam';
+		$command['from'] = array('auteurs' => 'spip_auteurs','L1' => 'spip_auteurs_liens');
+		$command['type'] = array();
+		$command['groupby'] = array();
+		$command['select'] = array("auteurs.id_auteur",
+		"auteurs.nom",
+		"auteurs.bio",
+		"auteurs.email",
+		"auteurs.url_site",
+		"auteurs.input_1");
+		$command['orderby'] = array();
+		$command['join'] = array('L1' => array('auteurs','id_auteur'));
+		$command['limit'] = '';
+		$command['having'] = 
+			array();
+	}
+	$command['where'] = 
+			array(
+quete_condition_statut('auteurs.statut','!5poubelle','!5poubelle',''), 
+			array('=', 'L1.id_objet', sql_quote($Pile[$SP]['id_article'], '', '')), 
+			array('=', 'L1.objet', sql_quote('article')));
+	if (defined("_BOUCLE_PROFILER")) $timer = time()+microtime();
+	$t0 = "";
+	// REQUETE
+	$iter = IterFactory::create(
+		"SQL",
+		$command,
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','autTeam',276,$GLOBALS['spip_lang'])
+	);
+	if (!$iter->err()) {
+	$SP++;
+	// RESULTATS
+	while ($Pile[$SP]=$iter->fetch()) {
+
+		$t0 .= (
+'
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="IMG/auton' .
+$Pile[$SP]['id_auteur'] .
+'.png" alt="' .
+interdire_scripts(typo(supprimer_numero($Pile[$SP]['nom']), "TYPO", $connect, $Pile[0])) .
+'"></div>
+							<h3>' .
+interdire_scripts(typo(supprimer_numero($Pile[$SP]['nom']), "TYPO", $connect, $Pile[0])) .
+'</h3>
+							<span class="position">' .
+BOUCLEmcautTeamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
+'
+							</span>
+							' .
+interdire_scripts(propre($Pile[$SP]['bio'], $connect, $Pile[0])) .
+'
+							<ul class="social-media">
+								<li><a href="mail_to(' .
+interdire_scripts($Pile[$SP]['email']) .
+')" class="dribbble"><i class="icon-envelope-o"></i></a></li>
+								<li><a href="' .
+calculer_url($Pile[$SP]['url_site'],'','url', $connect) .
+'" class="codepen"><i class="icon-feed"></i></a></li>
+								<li><a href="' .
+interdire_scripts($Pile[$SP]['input_1']) .
+'" class="github"><i class="icon-github-alt"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				        ');
+	}
+	$iter->free();
+	}
+	if (defined("_BOUCLE_PROFILER")
+	AND 1000*($timer = (time()+microtime())-$timer) > _BOUCLE_PROFILER)
+		spip_log(intval(1000*$timer)."ms BOUCLEautTeam @ squelettes/sommaire.html","profiler"._LOG_AVERTISSEMENT);
+	return $t0;
+}
+
+
+function BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &$doublons, &$Numrows, $SP) {
+
+	static $command = array();
+	static $connect;
+	$command['connect'] = $connect = '';
+	if (!isset($command['table'])) {
+		$command['table'] = 'articles';
+		$command['id'] = 'team';
+		$command['from'] = array('articles' => 'spip_articles');
+		$command['type'] = array();
+		$command['groupby'] = array();
+		$command['select'] = array("articles.id_article",
+		"articles.titre",
+		"articles.texte",
+		"articles.lang");
+		$command['orderby'] = array();
+		$command['where'] = 
+			array(
+quete_condition_statut('articles.statut','publie,prop,prepa/auteur','publie',''), 
+quete_condition_postdates('articles.date',''), 
+			array('=', 'articles.id_article', "3"));
+		$command['join'] = array();
+		$command['limit'] = '';
+		$command['having'] = 
+			array();
+	}
+	if (defined("_BOUCLE_PROFILER")) $timer = time()+microtime();
+	$t0 = "";
+	// REQUETE
+	$iter = IterFactory::create(
+		"SQL",
+		$command,
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','team',264,$GLOBALS['spip_lang'])
+	);
+	if (!$iter->err()) {
+	lang_select($GLOBALS['spip_lang']);
+	$SP++;
+	// RESULTATS
+	while ($Pile[$SP]=$iter->fetch()) {
+
+		lang_select_public($Pile[$SP]['lang'], '', $Pile[$SP]['titre']);
+		$t0 .= (
+'
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">' .
+interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, $Pile[0])) .
+'</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">' .
+interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
+'</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				      ' .
+BOUCLEautTeamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
+'
+
+				</div>
+			');
+		lang_select();
+	}
+	lang_select();
+	$iter->free();
+	}
+	if (defined("_BOUCLE_PROFILER")
+	AND 1000*($timer = (time()+microtime())-$timer) > _BOUCLE_PROFILER)
+		spip_log(intval(1000*$timer)."ms BOUCLEteam @ squelettes/sommaire.html","profiler"._LOG_AVERTISSEMENT);
+	return $t0;
+}
+
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 1.416 ms
+// Temps de compilation total: 7.394 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -18,102 +231,14 @@ function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(
 
 	$connect = '';
 	$page = (
-'<!DOCTYPE html>
+
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/tete') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',1,$GLOBALS[\'spip_lang\'])), _request("connect"));
+?'.'>
 ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/tete') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',2,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/menu') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',2,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BnF-Projet</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
 
-  <!--
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="' .
-find_in_path('css/animate.css') .
-'">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="' .
-find_in_path('css/icomoon.css') .
-'">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="' .
-find_in_path('css/simple-line-icons.css') .
-'">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="' .
-find_in_path('css/bootstrap.css') .
-'">
-	<!-- Style -->
-	<link rel="stylesheet" href="' .
-find_in_path('css/style.css') .
-'">
-
-
-	<!-- Modernizr JS -->
-	<script src="' .
-find_in_path('js/modernizr-2.6.2.min.js') .
-'"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-	<header role="banner" id="fh5co-header">
-		<div class="fluid-container">
-			<nav class="navbar navbar-default navbar-fixed-top js-fullheight">
-				<div id="navbar" class="navbar-collapse js-fullheight">
-					<ul class="nav navbar-nav navbar-left">
-						<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-						<li><a href="#" data-nav-section="services"><span>Services</span></a></li>
-						<li><a href="#" data-nav-section="explore"><span>Project</span></a></li>
-						<li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
-						<li><a href="#" data-nav-section="team"><span>Team</span></a></li>
-					</ul>
-				</div>
-			</nav>
-	  </div>
-	</header>
 
 	<section id="fh5co-home" data-section="home" style="background-image: url(' .
 find_in_path('images/full_image_1.jpg') .
@@ -124,8 +249,8 @@ find_in_path('images/full_image_1.jpg') .
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h1 class="to-animate">LA FRANCE EN AMÉRIQUE</h1>
-							<h2 class="to-animate">Embarquez à la découverte du Canada</h2>
+							<h1 class="to-animate">Black Template</h1>
+							<h2 class="to-animate">100% Free HTML5 Template. Licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0.</a> <br> Crafted with love by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates" class="fh5co-link">FREEHTML5.co</a></h2>
 						</div>
 					</div>
 				</div>
@@ -390,71 +515,9 @@ find_in_path('images/project-6.jpg') .
 	<section id="fh5co-team" data-section="team">
 		<div class="fh5co-team">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">Our Staff</h2>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. </h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="' .
-find_in_path('images/user-1.jpg') .
-'" alt="Roger Garfield"></div>
-							<h3>Roger Garfield</h3>
-							<span class="position">Co-Founder, Lead Developer</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<ul class="social-media">
-								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-								<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-								<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="' .
-find_in_path('images/user-2.jpg') .
-'" alt="Roger Garfield"></div>
-							<h3>Kevin Steve</h3>
-							<span class="position">Co-Founder, Product Designer</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<ul class="social-media">
-								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-								<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-								<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="' .
-find_in_path('images/user-3.jpg') .
-'" alt="Roger Garfield"></div>
-							<h3>Ross Standford</h3>
-							<span class="position">Full Stack Developer</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<ul class="social-media">
-								<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-								<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-								<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+			' .
+BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
+'
 			</div>
 		</div>
 	</section>
@@ -524,42 +587,12 @@ find_in_path('images/full_image_1.jpg') .
 	</div>
 	' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',466,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',362,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
-	<!-- <div id="map" class="fh5co-map"></div> -->
+	' .
 
-
-	<!-- jQuery -->
-	<script src="' .
-find_in_path('js/jquery.min.js') .
-'"></script>
-	<!-- jQuery Easing -->
-	<script src="' .
-find_in_path('js/jquery.easing.1.3.js') .
-'"></script>
-	<!-- Bootstrap -->
-	<script src="' .
-find_in_path('js/bootstrap.min.js') .
-'"></script>
-	<!-- Waypoints -->
-	<script src="' .
-find_in_path('js/jquery.waypoints.min.js') .
-'"></script>
-	<!-- Stellar Parallax -->
-	<script src="' .
-find_in_path('js/jquery.stellar.min.js') .
-'"></script>
-	<!-- Counters -->
-	<script src="' .
-find_in_path('js/jquery.countTo.js') .
-'"></script>
-	<!-- Main JS (Do not remove) -->
-	<script src="' .
-find_in_path('js/main.js') .
-'"></script>
-
-	</body>
-</html>
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',363,$GLOBALS[\'spip_lang\'])), _request("connect"));
+?'.'>
 ');
 
 	return analyse_resultat_skel('html_20bad19474852c2c1a99d7289d969071', $Cache, $page, 'squelettes/sommaire.html');
