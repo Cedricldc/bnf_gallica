@@ -2,7 +2,7 @@
 <INCLURE{fond=inclure/menu}>
 
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(#CHEMIN{images/full_image_1.jpg});" data-stellar-background-ratio="0.5">
+      <section id="fh5co-home" data-section="home" style="" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
@@ -10,14 +10,14 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">
 							<h1 class="to-animate">#NOM_SITE_SPIP</h1>
-							<h2 class="to-animate">#DESCRIPTIF_SITE_SPIP<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0.</a> <br> Crafted with love by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates" class="fh5co-link">FREEHTML5.co</a></h2>
+							<h2 class="to-animate">#SLOGAN_SITE_SPIP</h2>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	   <!--  Chiffres et Infos
 	<section id="fh5co-services" data-section="services">
 		<div class="fh5co-services">
 			<div class="container">
@@ -98,7 +98,66 @@
 			</div>
 		</div>
 	</section>
+		  Fin chiffres et stats -->
+		  
+		  <section id="fh5co-team" data-section="team">
+		<div class="fh5co-team">
+			<div class="container">
+			<BOUCLEteam(ARTICLES){id_article=3}>
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">#TITRE</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">#TEXTE</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				      <BOUCLEautTeam(AUTEURS){id_article}>
+					<div class="col-md-4"> 
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="IMG/auton#ID_AUTEUR.png" alt="#NOM"></div>
+							<h3>#NOM</h3>
+							<span class="position"><BOUCLEmcautTeam(MOTS){id_auteur}{id_groupe=2}{','}>
+							      #TITRE
+							      </BOUCLEmcautTeam>
+							</span>
+							#BIO
+							<ul class="social-media">
+								<li><a href="mail_to(#EMAIL)" class="dribbble"><i class="icon-envelope-o"></i></a></li>								
+								<li><a href="#URL_SITE" class="codepen"><i class="icon-feed"></i></a></li>
+								<li><a href="#INPUT_1" class="github"><i class="icon-github-alt"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				        </BOUCLEautTeam>
 
+				</div>
+			</BOUCLEteam>
+			
+	
+		  <section id="fh5co-team" data-section="team">
+		<div class="fh5co-team">
+			<div class="container">
+		  <BOUCLEteaser(ARTICLES){id_article=4}>
+		  <div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">#TITRE</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">#TEXTE</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </BOUCLEteaser>
+			     </div>
+		</div>
+	</section>
+		  	
+	
 	<section id="fh5co-explore" data-section="explore">
 		<div class="container">
 			<div class="row">
@@ -123,6 +182,8 @@
 							</div>
 						</div>
 					</div>
+    <div id="map"></div>
+	<script src="#CHEMIN{js/iiif-example.js}"></script>
 					<div class="col-md-12 text-center">
 						<div class="project-grid to-animate-2" style="background-image:  url(#CHEMIN{images/project-2.jpg});">
 							<div class="desc">
@@ -131,6 +192,10 @@
 							</div>
 						</div>
 					</div>
+					
+					
+				    <div id="map"></div>
+	<script src="#CHEMIN{js/iiif-example.js}"></script>
 					<div class="col-md-12 text-center">
 						<div class="project-grid to-animate-2" style="background-image:  url(#CHEMIN{images/project-3.jpg});">
 							<div class="desc">
@@ -167,7 +232,7 @@
 			</div>	
 		</div>
 	</section>
-	
+	<!-- Informations inutile
 	<section id="fh5co-pricing" data-section="pricing">
 		<div class="fh5co-pricing">
 			<div class="container">
@@ -257,47 +322,9 @@
 			</div>
 		</div>
 	</section>	
+	    Fin informations inutile -->
 
-	<section id="fh5co-team" data-section="team">
-		<div class="fh5co-team">
-			<div class="container">
-			<BOUCLEteam(ARTICLES){id_article=3}>
-				<div class="row">
-					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">#TITRE</h2>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">#TEXTE</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-				      <BOUCLEautTeam(AUTEURS){id_article}>
-					<div class="col-md-4"> 
-						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="IMG/auton#ID_AUTEUR.png" alt="#NOM"></div>
-							<h3>#NOM</h3>
-							<span class="position"><BOUCLEmcautTeam(MOTS){id_auteur}{id_groupe=2}{','}>
-							      #TITRE
-							      </BOUCLEmcautTeam>
-							</span>
-							#BIO
-							<ul class="social-media">
-								<li><a href="mail_to(#EMAIL)" class="dribbble"><i class="icon-envelope-o"></i></a></li>								
-								<li><a href="#URL_SITE" class="codepen"><i class="icon-feed"></i></a></li>
-								<li><a href="#INPUT_1" class="github"><i class="icon-github-alt"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				        </BOUCLEautTeam>
-
-				</div>
-			</BOUCLEteam>
-			</div>
-		</div>
-	</section>
-
+	 <!-- Lien vers leur page et formulaire contact
 	<div class="getting-started getting-started-1">
 		<div class="getting-grid" style="background-image:  url(#CHEMIN{images/full_image_1.jpg});">
 			<div class="desc text-center">
@@ -359,5 +386,6 @@
 			</div>
 		</div>
 	</div>
+	-->
 	<INCLURE{fond=inclure/pied}>
 	<INCLURE{fond=inclure/fin}>

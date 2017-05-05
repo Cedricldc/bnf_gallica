@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/tete.html
- * Date :      Fri, 28 Apr 2017 15:15:18 GMT
- * Compile :   Thu, 04 May 2017 11:55:27 GMT
+ * Date :      Thu, 04 May 2017 12:11:11 GMT
+ * Compile :   Thu, 04 May 2017 12:24:00 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/tete.html
-// Temps de compilation total: 0.217 ms
+// Temps de compilation total: 0.221 ms
 //
 
 function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -26,7 +26,9 @@ function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Black &mdash; Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>' .
+interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])) .
+'</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />

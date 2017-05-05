@@ -3,12 +3,12 @@
 /*
  * Squelette : squelettes-dist/formulaires/administration.html
  * Date :      Fri, 07 Apr 2017 13:07:03 GMT
- * Compile :   Thu, 04 May 2017 11:55:28 GMT
+ * Compile :   Thu, 04 May 2017 12:24:00 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes-dist/formulaires/administration.html
-// Temps de compilation total: 1.241 ms
+// Temps de compilation total: 1.082 ms
 //
 
 function html_f3666965c018303599bb64189cbac96c($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

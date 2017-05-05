@@ -2,8 +2,8 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Fri, 28 Apr 2017 15:30:58 GMT
- * Compile :   Thu, 04 May 2017 11:55:27 GMT
+ * Date :      Thu, 04 May 2017 12:11:09 GMT
+ * Compile :   Thu, 04 May 2017 12:24:00 GMT
  * Boucles :   mcautTeam, autTeam, team
  */ 
 
@@ -103,7 +103,7 @@ quete_condition_statut('auteurs.statut','!5poubelle','!5poubelle',''),
 
 		$t0 .= (
 '
-					<div class="col-md-4">
+					<div class="col-md-4"> 
 						<div class="team-box text-center to-animate-2">
 							<div class="user"><img class="img-reponsive" src="IMG/auton' .
 $Pile[$SP]['id_auteur'] .
@@ -123,7 +123,7 @@ interdire_scripts(propre($Pile[$SP]['bio'], $connect, $Pile[0])) .
 							<ul class="social-media">
 								<li><a href="mail_to(' .
 interdire_scripts($Pile[$SP]['email']) .
-')" class="dribbble"><i class="icon-envelope-o"></i></a></li>
+')" class="dribbble"><i class="icon-envelope-o"></i></a></li>								
 								<li><a href="' .
 calculer_url($Pile[$SP]['url_site'],'','url', $connect) .
 '" class="codepen"><i class="icon-feed"></i></a></li>
@@ -221,7 +221,7 @@ BOUCLEautTeamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 7.394 ms
+// Temps de compilation total: 7.802 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -249,8 +249,12 @@ find_in_path('images/full_image_1.jpg') .
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h1 class="to-animate">Black Template</h1>
-							<h2 class="to-animate">100% Free HTML5 Template. Licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0.</a> <br> Crafted with love by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates" class="fh5co-link">FREEHTML5.co</a></h2>
+							<h1 class="to-animate">' .
+interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])) .
+'</h1>
+							<h2 class="to-animate">' .
+interdire_scripts(propre($GLOBALS['meta']['descriptif_site'], $connect, $Pile[0])) .
+'<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0.</a> <br> Crafted with love by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates" class="fh5co-link">FREEHTML5.co</a></h2>
 						</div>
 					</div>
 				</div>
@@ -418,10 +422,10 @@ find_in_path('images/project-6.jpg') .
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>	
 		</div>
 	</section>
-
+	
 	<section id="fh5co-pricing" data-section="pricing">
 		<div class="fh5co-pricing">
 			<div class="container">
@@ -510,7 +514,7 @@ find_in_path('images/project-6.jpg') .
 
 			</div>
 		</div>
-	</section>
+	</section>	
 
 	<section id="fh5co-team" data-section="team">
 		<div class="fh5co-team">
