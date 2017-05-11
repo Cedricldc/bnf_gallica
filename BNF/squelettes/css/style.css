@@ -903,6 +903,13 @@ background-image: url(#CHEMIN{images/carte_home2.jpg});
   opacity: 0;
 }
 
+#teaser {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+
 @media screen and (max-width: 480px) {
   .col-xxs-12 {
     float: none;

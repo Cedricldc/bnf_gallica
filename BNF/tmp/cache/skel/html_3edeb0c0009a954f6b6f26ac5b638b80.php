@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/tete.html
- * Date :      Thu, 04 May 2017 12:11:11 GMT
- * Compile :   Thu, 04 May 2017 12:24:00 GMT
+ * Date :      Thu, 11 May 2017 09:17:49 GMT
+ * Compile :   Thu, 11 May 2017 09:20:25 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/tete.html
-// Temps de compilation total: 0.221 ms
+// Temps de compilation total: 0.313 ms
 //
 
 function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -47,7 +47,16 @@ interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])
 
 	//////////////////////////////////////////////////////
 	 -->
-
+	  <!-- IIIF -->
+	   <link rel="stylesheet" href="' .
+find_in_path('css/iiif.css') .
+'">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://rawgit.com/mejackreed/Leaflet-IIIF/master/leaflet-iiif.js"></script>
+    
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>

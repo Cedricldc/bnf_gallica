@@ -46,3 +46,7 @@ iiifLayers = {
 };
 
 L.control.layers(iiifLayers).addTo(map);
+
+
+L.marker([-40.5, 35.09]).addTo(map)
+ .bindPopup('it works motherfucker');

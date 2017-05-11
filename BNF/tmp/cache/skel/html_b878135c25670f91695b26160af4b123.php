@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/pied.html
- * Date :      Thu, 04 May 2017 12:11:14 GMT
- * Compile :   Thu, 04 May 2017 12:24:00 GMT
+ * Date :      Thu, 11 May 2017 09:17:54 GMT
+ * Compile :   Thu, 11 May 2017 09:20:25 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/pied.html
-// Temps de compilation total: 0.083 ms
+// Temps de compilation total: 0.052 ms
 //
 
 function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -20,6 +20,7 @@ function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(
 	$page = '<div id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
+				    <!-- Formulaire de contact
 				<div class="col-md-4 to-animate">
 					<h3 class="section-title">About Us</h3>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
@@ -67,7 +68,8 @@ function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(
 				</div>
 			</div>
 		</div>
-	</div>';
+	</div>
+	-->';
 
 	return analyse_resultat_skel('html_b878135c25670f91695b26160af4b123', $Cache, $page, 'squelettes/inclure/pied.html');
 }
