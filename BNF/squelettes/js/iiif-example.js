@@ -5,8 +5,13 @@ map = L.map('map', {
   crs: L.CRS.Simple,
       minZoom: 3,
   maxZoom: 5,
-      zoom: 3
+      zoom: 3,
+      scrollWheelZoom: false
 });
+
+ map.once('focus', function() { map.scrollWheelZoom.enable(); });
+ map.on('focus', function() { map.scrollWheelZoom.enable(); });
+ map.on('blur', function() { map.scrollWheelZoom.disable(); });
 
 stanfordMlk = L.tileLayer.iiif('http://gallica.bnf.fr/iiif/ark:/12148/btv1b8491433m/f1/info.json', {
   attribution: '<a href="http://searchworks.stanford.edu/view/hg676jb4964">Martin Luther King Jr. & Joan Baez march to integrate schools, Grenada, MS, 1966</a>',

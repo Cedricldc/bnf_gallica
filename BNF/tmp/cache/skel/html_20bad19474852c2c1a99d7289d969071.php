@@ -3,7 +3,7 @@
 /*
  * Squelette : squelettes/sommaire.html
  * Date :      Thu, 11 May 2017 09:20:15 GMT
- * Compile :   Thu, 11 May 2017 09:20:25 GMT
+ * Compile :   Thu, 11 May 2017 09:31:05 GMT
  * Boucles :   mcautTeam, autTeam, team, teaser, histoire, introduction, voy1, cartier, voy2, voyage2, voy3, voyage3
  */ 
 
@@ -797,7 +797,7 @@ interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 9.296 ms
+// Temps de compilation total: 7.662 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
