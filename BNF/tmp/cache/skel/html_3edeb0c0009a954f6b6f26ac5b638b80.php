@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/tete.html
- * Date :      Thu, 11 May 2017 09:17:49 GMT
- * Compile :   Thu, 11 May 2017 09:31:05 GMT
+ * Date :      Fri, 12 May 2017 10:02:45 GMT
+ * Compile :   Fri, 12 May 2017 13:27:32 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/tete.html
-// Temps de compilation total: 0.238 ms
+// Temps de compilation total: 0.293 ms
 //
 
 function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -34,12 +34,12 @@ interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  <!-- 
+  <!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -47,16 +47,39 @@ interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])
 
 	//////////////////////////////////////////////////////
 	 -->
-	  <!-- IIIF -->
-	   <link rel="stylesheet" href="' .
+ <!-- formulairesimple -->
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+
+ <!-- formulaire -->
+ <!--<link rel=\'stylesheet prefetch\' href=\'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\'>
+ <link rel=\'stylesheet prefetch\' href=\'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css\'>
+ <link rel=\'stylesheet prefetch\' href=\'http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css\'>-->
+ <link rel="stylesheet" href="' .
+find_in_path('css/formstyle.css') .
+'">
+
+
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="' .
+find_in_path('css/leaflet.awesome-markers.css') .
+'">
+ <script src="https://use.fontawesome.com/5980899126.js"></script>
+
+
+  <!-- IIIF -->
+  <link rel="stylesheet" href="' .
 find_in_path('css/iiif.css') .
 '">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-    <script src="https://rawgit.com/mejackreed/Leaflet-IIIF/master/leaflet-iiif.js"></script>
-    
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  <script src="https://rawgit.com/mejackreed/Leaflet-IIIF/master/leaflet-iiif.js"></script>
+
+ <!-- Font Awesome markers -->
+
+
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -72,7 +95,7 @@ find_in_path('css/iiif.css') .
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="' .
 find_in_path('css/animate.css') .
@@ -105,7 +128,8 @@ find_in_path('js/modernizr-2.6.2.min.js') .
 	<![endif]-->
 
 	</head>
-	<body>');
+	<body>
+');
 
 	return analyse_resultat_skel('html_3edeb0c0009a954f6b6f26ac5b638b80', $Cache, $page, 'squelettes/inclure/tete.html');
 }

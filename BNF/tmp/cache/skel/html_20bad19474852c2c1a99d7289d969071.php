@@ -2,8 +2,8 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Thu, 11 May 2017 09:20:15 GMT
- * Compile :   Thu, 11 May 2017 09:31:05 GMT
+ * Date :      Fri, 12 May 2017 13:27:11 GMT
+ * Compile :   Fri, 12 May 2017 13:27:32 GMT
  * Boucles :   mcautTeam, autTeam, team, teaser, histoire, introduction, voy1, cartier, voy2, voyage2, voy3, voyage3
  */ 
 
@@ -103,7 +103,7 @@ quete_condition_statut('auteurs.statut','!5poubelle','!5poubelle',''),
 
 		$t0 .= (
 '
-					<div class="col-md-4"> 
+					<div class="col-md-4">
 						<div class="team-box text-center to-animate-2">
 							<div class="user"><img class="img-reponsive" src="IMG/auton' .
 $Pile[$SP]['id_auteur'] .
@@ -123,7 +123,7 @@ interdire_scripts(propre($Pile[$SP]['bio'], $connect, $Pile[0])) .
 							<ul class="social-media">
 								<li><a href="mail_to(' .
 interdire_scripts($Pile[$SP]['email']) .
-')" class="dribbble"><i class="icon-envelope-o"></i></a></li>								
+')" class="dribbble"><i class="icon-envelope-o"></i></a></li>
 								<li><a href="' .
 calculer_url($Pile[$SP]['url_site'],'','url', $connect) .
 '" class="codepen"><i class="icon-feed"></i></a></li>
@@ -263,9 +263,9 @@ quete_condition_postdates('articles.date',''),
 '
                             <div>
                                 <div>
-                                    <h2 class="to-animate">' .
+                                    <h1 class="to-animate">' .
 interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, $Pile[0])) .
-'</h2>
+'</h1>
                                     <div>
                                         <div>
                                             <h3 class="to-animate">' .
@@ -388,7 +388,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','introduction',190,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','introduction',193,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -446,7 +446,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy1',198,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy1',201,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -470,7 +470,7 @@ interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
 							</div>
 						</div>
 					</div>
-				
+
 					      ');
 		lang_select();
 	}
@@ -515,7 +515,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','cartier',213,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','cartier',216,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -573,7 +573,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy2',219,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy2',222,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -597,7 +597,7 @@ interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
 							</div>
 						</div>
 					</div>
-				
+
 					      ');
 		lang_select();
 	}
@@ -642,7 +642,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage2',235,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage2',238,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -700,7 +700,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy3',241,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy3',244,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -769,7 +769,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage3',256,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage3',259,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -797,7 +797,7 @@ interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 7.662 ms
+// Temps de compilation total: 7.958 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -835,9 +835,9 @@ interdire_scripts(typo($GLOBALS['meta']['slogan_site'], "TYPO", $connect, $Pile[
 			</div>
 		</div>
 	</section>
-	
 
-		  	
+
+
 	   <!--  Chiffres et Infos
 	<section id="fh5co-services" data-section="services">
 		<div class="fh5co-services">
@@ -929,7 +929,7 @@ find_in_path('images/full_image_2.jpg') .
 BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
 
-		
+
 
 
 			<br><br><br>
@@ -948,7 +948,7 @@ BOUCLEteaserhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Num
 		      </div>
 				</div>
       </section>
-	
+
 	<section id="fh5co-explore" data-section="explore">
 		<div class="container">
 			' .
@@ -958,18 +958,23 @@ BOUCLEhistoirehtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $N
 			<div class="container">
 
     <div id="map"></div>
+
+  <script src="' .
+find_in_path('js/leaflet.awesome-markers.js') .
+'"></script>
 	<script src="' .
 find_in_path('js/iiif-example.js') .
 '"></script>
+
 					<div class="col-md-12">
 					      <span class="position" style="text-align:justify">' .
 BOUCLEintroductionhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
 							</span>
-  
+
 					</div>
-	
-					
+
+
 			' .
 BOUCLEvoy1html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
@@ -982,8 +987,8 @@ find_in_path('images/fleuve.jpg') .
 BOUCLEcartierhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
 							</span>
-							
-							
+
+
 			' .
 BOUCLEvoy2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
@@ -997,7 +1002,7 @@ find_in_path('images/nicolay.jpg') .
 BOUCLEvoyage2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
 							</span>
-							
+
 			<div class="container">
 			' .
 BOUCLEvoy3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
@@ -1012,7 +1017,7 @@ BOUCLEvoyage3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 '
 							</span>
 					<!-- surplus
-					
+
 					<div class="col-md-12 text-center">
 						<div class="project-grid to-animate-2" style="background-image:  url(' .
 find_in_path('images/project-4.jpg') .
@@ -1044,11 +1049,11 @@ find_in_path('images/project-6.jpg') .
 						</div>
 					</div>-->
 				</div>
-			</div>	
+			</div>
 		</div>
-		 
+
 	</section>
-	
+
 	<section id="fh5co-appli" data-section="appli">
 		<div class="fh5co-appli">
 			<div class="container">
@@ -1057,34 +1062,34 @@ find_in_path('images/project-6.jpg') .
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1>Application mobile:</h1>
-		      <p> L\'application mobile de "La france en Amérique" permet de<strong>jouer</strong> avec les cartes à travers une découverte ludique et intéractive !</p>
+		      <p> L\'application mobile de "La france en Amérique" permet de<strong> jouer</strong> avec les cartes à travers une découverte ludique et intéractive !</p>
                     	      <p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/tel.png" alt="" width="130" height="230" /></p>
 		    <a href="squelettes/page_application_mobile.html" class="btn btn-default btn-lg">Téléchargez !</a>
                 </div>
-            </div> 
+            </div>
         </div>
-	 
+
     </section>
 	  <br><br><br><br><br><br><br><br><br>
 	  <section id="fh5co-logo" data-section="logo">
 		<div class="fh5co-logo"></div>
 		<div class="container"></div>
       <center><p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/logoo.png" alt="" width="160" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/logo8.png" alt="" width="250" height="160" /></p>
-			      
+
   <br>
         <div class="container text-center">
             <p>Copyright &copy; La France en Amérique</p>
 	    </div>
-	   	    
-	    
-	    
-    
-    
-    
 
 
-	
-	
+
+
+
+
+
+
+
+
 	<!-- Informations inutile
 	<section id="fh5co-pricing" data-section="pricing">
 		<div class="fh5co-pricing">
@@ -1174,7 +1179,7 @@ find_in_path('images/project-6.jpg') .
 
 			</div>
 		</div>
-	</section>	
+	</section>
 	    Fin informations inutile -->
 
 	 <!-- Lien vers leur page et formulaire contact
@@ -1244,11 +1249,11 @@ find_in_path('images/full_image_1.jpg') .
 	-->
 	' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',483,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',486,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
 	' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',484,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',487,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
 ');
 

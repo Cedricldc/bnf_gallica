@@ -12416,10 +12416,10 @@ Ce plugin n&#233;ecessite la pr&#233;sence de libxslt sur votre serveur, utilisa
 <archive id="commandes_v1.zip" dtd="paquet">
 <zip>
 	<file>commandes_v1.zip</file>
-	<size>106030</size>
-	<date>1494451142</date>
+	<size>106324</size>
+	<date>1494494342</date>
 	<source>_plugins_/commandes/trunk</source>
-	<last_commit>2017-05-10 23:19:02</last_commit>
+	<last_commit>2017-05-11 11:19:01</last_commit>
 </zip>
 <traductions>
 <traduction module="commandes" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/commandes/trunk/lang/" reference="fr">
@@ -12447,7 +12447,7 @@ Ce plugin n&#233;ecessite la pr&#233;sence de libxslt sur votre serveur, utilisa
 <paquet
 	prefix="commandes"
 	categorie="divers"
-	version="1.9.6"
+	version="1.9.7"
 	etat="stable"
 	compatibilite="[3.0.5;3.1.*]"
 	logo="prive/themes/spip/images/commande.png"
@@ -26408,9 +26408,9 @@ Une page de démonstration est disponible à l'adresse {{?page=demo/fonctions_im
 <zip>
 	<file>forum_sectorise.zip</file>
 	<size>15308</size>
-	<date>1494108244</date>
+	<date>1494497042</date>
 	<source>_plugins_/forum_sectorise</source>
-	<last_commit>2017-05-07 00:04:03</last_commit>
+	<last_commit>2017-05-11 12:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="forumsectorise" reference="fr">
@@ -26420,7 +26420,7 @@ Une page de démonstration est disponible à l'adresse {{?page=demo/fonctions_im
 <paquet
 	prefix="forumsectorise"
 	categorie="communication"
-	version="0.8.0"
+	version="0.8.1"
 	etat="stable"
 	compatibilite="[2.1.0;3.2.*]"
 	logo="prive/themes/spip/images/forumsectorise-32.png"
@@ -26442,7 +26442,7 @@ Une page de démonstration est disponible à l'adresse {{?page=demo/fonctions_im
 	<pipeline nom="afficher_config_objet" inclure="forumsectorise_pipelines.php" />
 	
 	<necessite nom="saisies" compatibilite="[1.9.0;[" />
-	<necessite nom="forum" compatibilite="[1.10.1;[" />
+	<necessite nom="forum" compatibilite="[1.8.43;[" />
 
 	<menu nom="forumsectorise" titre="forumsectorise:titre_menu" parent="bando_configuration" icone="images/forumsectorise-16.png" action="configurer_forumsectorise" />
 </paquet>
@@ -75537,10 +75537,10 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <archive id="escal_V3.zip" dtd="paquet">
 <zip>
 	<file>escal_V3.zip</file>
-	<size>1386061</size>
-	<date>1494439442</date>
+	<size>1386104</size>
+	<date>1494518642</date>
 	<source>_squelettes_/escal/branche_V3</source>
-	<last_commit>2017-05-10 20:04:01</last_commit>
+	<last_commit>2017-05-11 18:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="escal" reference="fr">
@@ -75560,7 +75560,7 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <paquet
 	prefix="escal"
 	categorie="squelette"
-	version="3.87.7"
+	version="3.87.9"
 	schema="1.0.10"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
@@ -76658,10 +76658,10 @@ Un squelette de portail d&#8217;Etablissement, destin&#233;e &#224; une &#233;co
 <archive id="html5up_strongly_typed.zip" dtd="paquet">
 <zip>
 	<file>html5up_strongly_typed.zip</file>
-	<size>1591631</size>
-	<date>1494155954</date>
+	<size>1591643</size>
+	<date>1494525842</date>
 	<source>_squelettes_/html5up_strongly_typed</source>
-	<last_commit>2017-05-07 13:19:04</last_commit>
+	<last_commit>2017-05-11 20:04:01</last_commit>
 </zip>
 
 <paquet
@@ -76680,6 +76680,7 @@ Un squelette de portail d&#8217;Etablissement, destin&#233;e &#224; une &#233;co
 	
 	<!--    Des plugin nécessités éventuels -->
 	<necessite nom="nuage" compatibilite="[4.0.6;]" />
+	<necessite nom="depublie" compatibilite="[1.2.5;]" />
 	<utilise nom="twitter" compatibilite="[1.5.0;]" />
 	
 	<!-- Des WebFont ou css externes : cdn ou autre     -->
