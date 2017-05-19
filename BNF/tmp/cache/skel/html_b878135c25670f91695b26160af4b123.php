@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/pied.html
- * Date :      Thu, 18 May 2017 14:53:31 GMT
- * Compile :   Fri, 19 May 2017 10:33:59 GMT
+ * Date :      Fri, 19 May 2017 11:16:10 GMT
+ * Compile :   Fri, 19 May 2017 16:07:52 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/pied.html
-// Temps de compilation total: 0.055 ms
+// Temps de compilation total: 0.045 ms
 //
 
 function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -20,15 +20,15 @@ function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(
 	$page = '<div id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-			
+
 			 <section id="fh5co-logo" data-section="logo">
 		<div class="fh5co-logo"></div>
 		<div class="container"></div>
-      <center><p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/logoo.png" alt="" width="160" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/logo8.png" alt="" width="250" height="160" /></p>
-			      
+      <center><p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/boat_logo_white.svg" alt="" width="160" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/logo8.png" alt="" width="250" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/Logo_BnF.svg" alt="" height="160"/></p>
+
   <br>
         <div class="container text-center">
-            <p>Copyright &copy; La France en Amérique</p>
+            <p>Copyright 2017&copy; La France en Amérique</p>
 	    </div>
 				    <!-- Formulaire de contact
 				<div class="col-md-4 to-animate">
@@ -79,7 +79,8 @@ function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(
 			</div>
 		</div>
 	</div>
-	-->';
+	-->
+';
 
 	return analyse_resultat_skel('html_b878135c25670f91695b26160af4b123', $Cache, $page, 'squelettes/inclure/pied.html');
 }

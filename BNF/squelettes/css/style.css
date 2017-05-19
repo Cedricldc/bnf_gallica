@@ -346,7 +346,6 @@ hr {
 }
 
 
-
 #fh5co-teaser {
   background-color: #121036;
   background-size: cover;
@@ -797,6 +796,8 @@ background-color: #121036;
 
 
 #fh5co-footer {
+    background-color: #121036;
+    padding-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 #fh5co-footer a {

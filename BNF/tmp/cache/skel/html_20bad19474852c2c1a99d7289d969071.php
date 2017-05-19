@@ -2,8 +2,8 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Fri, 19 May 2017 10:19:40 GMT
- * Compile :   Fri, 19 May 2017 10:33:59 GMT
+ * Date :      Fri, 19 May 2017 16:07:48 GMT
+ * Compile :   Fri, 19 May 2017 16:07:52 GMT
  * Boucles :   teaser, histoire, introduction, voy1, cartier, voy2, voyage2, voy3, voyage3, mcautTeam, autTeam, team
  */ 
 
@@ -782,7 +782,7 @@ BOUCLEautTeamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 9.207 ms
+// Temps de compilation total: 9.901 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -815,12 +815,12 @@ interdire_scripts(typo($GLOBALS['meta']['slogan_site'], "TYPO", $connect, $Pile[
 '</h2>
                             </div>
                             <div class="row">
-                                <a href="#teaser">
-                                    <div class="to-animate arrow">
+                              <div class="to-animate arrow">
+                                  <a href="#teaser">
                                         <img class="anim-arrow bounce" width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K"
                                         />
-                                    </div>
-                                </a>
+                                  </a>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -912,6 +912,8 @@ BOUCLEvoyage3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
                 </div>
+              </div>
+            </section>
 
                 <section id="fh5co-appli" data-section="appli">
                     <div class="fh5co-appli">
@@ -919,7 +921,7 @@ BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numro
                             <div id="Application_mobile" class="content-section text-center">
                                 <div class="row">
                                     <div class="container">
-                                        <div class="col-md-12 section-heading text-center">">
+                                        <div class="col-md-12 section-heading text-center">
                                             <h2 class="to-animate">Application mobile:</h2>
                                             <h3 class="to-animate"> L\'application mobile de "La france en Amérique" permet de<strong> jouer</strong> avec les cartes à travers une découverte ludique et intéractive !</h3>
                                             <p class="to-animate"><img class="size-full wp-image-1201 alignnone" src="squelettes/images/tel.png" alt="" width="130" height="230" /></p>
@@ -1100,11 +1102,11 @@ find_in_path('images/full_image_1.jpg') .
 	-->
                             ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',347,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',349,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
                                 ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',348,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',350,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
 ');
 
