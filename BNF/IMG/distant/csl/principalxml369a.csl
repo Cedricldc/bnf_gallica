@@ -7749,10 +7749,10 @@ Inclue hashgrid.
 <archive id="bootstrap3.zip" dtd="paquet">
 <zip>
 	<file>bootstrap3.zip</file>
-	<size>405103</size>
-	<date>1494237844</date>
+	<size>405074</size>
+	<date>1494752642</date>
 	<source>_plugins_/bootstrap/trunk</source>
-	<last_commit>2017-05-08 12:04:02</last_commit>
+	<last_commit>2017-05-14 11:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="charter" reference="fr">
@@ -7762,7 +7762,7 @@ Inclue hashgrid.
 <paquet
 	prefix="bootstrap3"
 	categorie="outil"
-	version="3.0.8"
+	version="3.0.9"
 	etat="test"
 	compatibilite="[3.0.2;3.1.*]"
 	logo="img/bootstrap-32.png"
@@ -12416,10 +12416,10 @@ Ce plugin n&#233;ecessite la pr&#233;sence de libxslt sur votre serveur, utilisa
 <archive id="commandes_v1.zip" dtd="paquet">
 <zip>
 	<file>commandes_v1.zip</file>
-	<size>106324</size>
-	<date>1494494342</date>
+	<size>106567</size>
+	<date>1495019942</date>
 	<source>_plugins_/commandes/trunk</source>
-	<last_commit>2017-05-11 11:19:01</last_commit>
+	<last_commit>2017-05-17 13:19:01</last_commit>
 </zip>
 <traductions>
 <traduction module="commandes" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/commandes/trunk/lang/" reference="fr">
@@ -12447,7 +12447,7 @@ Ce plugin n&#233;ecessite la pr&#233;sence de libxslt sur votre serveur, utilisa
 <paquet
 	prefix="commandes"
 	categorie="divers"
-	version="1.9.7"
+	version="1.10.0"
 	etat="stable"
 	compatibilite="[3.0.5;3.1.*]"
 	logo="prive/themes/spip/images/commande.png"
@@ -17029,10 +17029,10 @@ _ <code><h1 class="#EDIT{titre} علامات اخرى">#TITRE</h1></code>.
 <archive id="date_modif_manuelle.zip" dtd="paquet">
 <zip>
 	<file>date_modif_manuelle.zip</file>
-	<size>46631</size>
-	<date>1491570242</date>
+	<size>46651</size>
+	<date>1494673442</date>
 	<source>_plugins_/date_modif_manuelle/trunk</source>
-	<last_commit>2017-04-07 15:04:02</last_commit>
+	<last_commit>2017-05-13 13:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="date_modif_manuelle" reference="fr">
@@ -17042,11 +17042,11 @@ _ <code><h1 class="#EDIT{titre} علامات اخرى">#TITRE</h1></code>.
 <paquet
 	prefix="date_modif_manuelle"
 	categorie="date"
-	version="1.0.0"
-	etat="dev"
+	version="1.0.1"
+	etat="test"
 	compatibilite="[3.1.0;3.2.*]"
 	logo="prive/themes/spip/images/date_modif_manuelle-64.png"
-	documentation=""
+	documentation="https://contrib.spip.net/4899"
 	schema="1.0.0" 
 >
 
@@ -19725,24 +19725,24 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 <archive id="documentation_2.zip" dtd="paquet">
 <zip>
 	<file>documentation_2.zip</file>
-	<size>364772</size>
-	<date>1450876114</date>
+	<size>364782</size>
+	<date>1494749042</date>
 	<source>_galaxie_/programmer.spip.net/plugin_documentation/branches/v2</source>
-	<last_commit>2013-11-09 16:58:27</last_commit>
+	<last_commit>2017-05-14 10:04:02</last_commit>
 </zip>
 <traductions>
-<traduction module="documentation" gestionnaire="salvatore" url="http://trad.spip.org" source="svn://zone.spip.org/spip-zone/_galaxie_/programmer.spip.org/plugin_documentation/trunk/lang/" reference="fr">
+<traduction module="documentation" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_galaxie_/programmer.spip.net/plugin_documentation/trunk/lang/" reference="fr">
 	<langue code="en" />
 	<langue code="fr" />
 	<langue code="sk">
-		<traducteur nom="jaro" lien="http://trad.spip.org/auteur/jaro" />
+		<traducteur nom="jaro" lien="https://trad.spip.net/auteur/jaro" />
 	</langue>
 </traduction>
-<traduction module="paquet-documentation" gestionnaire="salvatore" url="http://trad.spip.org" source="svn://zone.spip.org/spip-zone/_galaxie_/programmer.spip.org/plugin_documentation/trunk/lang/" reference="fr">
+<traduction module="paquet-documentation" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_galaxie_/programmer.spip.net/plugin_documentation/trunk/lang/" reference="fr">
 	<langue code="en" />
 	<langue code="fr" />
 	<langue code="sk">
-		<traducteur nom="jaro" lien="http://trad.spip.org/auteur/jaro" />
+		<traducteur nom="jaro" lien="https://trad.spip.net/auteur/jaro" />
 	</langue>
 </traduction>
 </traductions>
@@ -19816,10 +19816,10 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 <archive id="documentation.zip" dtd="paquet">
 <zip>
 	<file>documentation.zip</file>
-	<size>470369</size>
-	<date>1485148116</date>
+	<size>470894</size>
+	<date>1494626642</date>
 	<source>_galaxie_/programmer.spip.net/plugin_documentation/trunk</source>
-	<last_commit>2017-01-23 06:08:36</last_commit>
+	<last_commit>2017-05-13 00:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="documentation" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_galaxie_/programmer.spip.net/plugin_documentation/trunk/lang/" reference="fr">
@@ -19859,9 +19859,9 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 <paquet
 	prefix="documentation"
 	categorie="squelette"
-	version="3.0.8"
+	version="3.0.11"
 	etat="stable"
-	compatibilite="[3.0.0;3.1.*]"
+	compatibilite="[3.0.0;3.2.*]"
 	logo="images/documentation-128.png"
 	schema="1.2.1"
 >
@@ -19933,10 +19933,10 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 <archive id="documentation2latex.zip" dtd="paquet">
 <zip>
 	<file>documentation2latex.zip</file>
-	<size>45519</size>
-	<date>1450876112</date>
+	<size>45520</size>
+	<date>1494749042</date>
 	<source>_galaxie_/programmer.spip.net/plugin_latex/trunk</source>
-	<last_commit>2013-11-09 17:01:27</last_commit>
+	<last_commit>2017-05-14 10:04:02</last_commit>
 </zip>
 
 <paquet
@@ -19946,7 +19946,7 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 	etat="stable"
 	compatibilite="[3.0.0;3.0.*]"
 	logo="spiplatex.png"
-	documentation="http://www.spip-contrib.net/Livre-avec-SPIP"
+	documentation="https://contrib.spip.net/Livre-avec-SPIP"
 >	
 
 	<nom>Documentation vers LaTeX</nom>
@@ -19966,7 +19966,7 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 </slogan>
 <description>
 <multi>
-[fr]Sert à traduire programmer.spip.org en LaTeX. On fait une compilation LaTeX local.
+[fr]Sert à traduire programmer.spip.net en LaTeX. On fait une compilation LaTeX local.
 		Pour la conversion des niveaux de titres :
 			- Une section de lang = 1 livre (on choisit la langue du livre qu'on fait créer)
 			- Une partie (introduction, Ecriture des squelettes etc) =  \part
@@ -20803,10 +20803,10 @@ La nouvelle rubrique est cr&#233;&#233;e au m&#234;me niveau que la rubrique cop
 <archive id="duplicator_spip3.zip" dtd="paquet">
 <zip>
 	<file>duplicator_spip3.zip</file>
-	<size>74608</size>
-	<date>1491843868</date>
+	<size>74670</size>
+	<date>1494878642</date>
 	<source>_plugins_/duplicator/trunk</source>
-	<last_commit>2017-04-10 19:04:12</last_commit>
+	<last_commit>2017-05-15 22:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="duplicator" reference="fr">
@@ -20816,7 +20816,7 @@ La nouvelle rubrique est cr&#233;&#233;e au m&#234;me niveau que la rubrique cop
 <paquet
 	prefix="duplicator"
 	categorie="edition"
-	version="1.5.7"
+	version="1.5.8"
 	etat="test"
 	compatibilite="[3.0.0;3.1.*]"
 	logo="prive/themes/spip/images/duplicator.png"
@@ -24931,6 +24931,42 @@ Une page de démonstration est disponible à l'adresse {{?page=demo/fonctions_im
 
 </archive>
 
+<archive id="fond_espace_prive.zip" dtd="paquet">
+<zip>
+	<file>fond_espace_prive.zip</file>
+	<size>335297</size>
+	<date>1494612242</date>
+	<source>_plugins_/fond_espace_prive</source>
+	<last_commit>2017-05-12 20:04:02</last_commit>
+</zip>
+
+<paquet
+	prefix="fond_espace_prive"
+	categorie="outil"
+	version="2.1.1"
+	etat="test"
+	compatibilite="[3.0.0;3.1.*]"
+	documentation="http://www.paris-beyrouth.org/Plugin-SPIP-Fond-espace-prive"
+>
+
+	<nom>Fond d’écran pour l’espace privé</nom>
+	<!-- Varier les mises en page selon les rubriques, les articles... -->
+
+	<auteur lien="http://www.paris-beyrouth.org">Arnaud Martin / Paris-Beyrouth</auteur>
+
+	<copyright>2014-2015</copyright>
+
+	<licence lien="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3</licence>
+
+	<pipeline nom="header_prive" inclure="fond_espace_prive_pipelines.php" />
+	<pipeline nom="insert_head_css" inclure="fond_espace_prive_pipelines.php" />
+
+</paquet>
+
+
+
+</archive>
+
 <archive id="fond_mp3.zip" dtd="paquet">
 <zip>
 	<file>fond_mp3.zip</file>
@@ -24969,6 +25005,49 @@ Une page de démonstration est disponible à l'adresse {{?page=demo/fonctions_im
 		  parent="bando_configuration" icone="images/fmp3-16.png"
 		  action="fmp3_configure" />
 	
+
+</paquet>
+
+
+
+</archive>
+
+<archive id="fonds.zip" dtd="paquet">
+<zip>
+	<file>fonds.zip</file>
+	<size>18280</size>
+	<date>1495106342</date>
+	<source>_plugins_/fonds</source>
+	<last_commit>2017-05-18 13:19:01</last_commit>
+</zip>
+
+<paquet
+	prefix="fonds"
+	categorie="outil"
+	version="2.5.0"
+	etat="test"
+	compatibilite="[3.0.0;3.1.*]"
+	logo="imgs/logo.png"
+	schema="0.8.2"
+>
+
+	<nom>Fonds d’articles</nom>
+
+	<auteur lien="http://www.paris-beyrouth.org">Arnaud Martin / Paris-Beyrouth</auteur>
+
+	<copyright>2014-2015</copyright>
+
+	<licence lien="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3</licence>
+
+	<pipeline nom="affiche_droite" inclure="fonds_pipelines.php" />
+	<pipeline nom="declarer_tables_objets_sql" inclure="fonds_pipelines.php" />
+	<pipeline nom="insert_head_css" inclure="fonds_pipelines.php" />
+	<pipeline nom="insert_head" inclure="fonds_pipelines.php" />
+	<pipeline nom="header_prive" inclure="fonds_pipelines.php" />
+
+	<necessite nom="image_responsive" compatibilite="[2.4.0;[" />
+	<chemin path="squelettes" />
+	<chemin path="" />
 
 </paquet>
 
@@ -32050,16 +32129,16 @@ Utilisation :
 <archive id="image_responsive.zip" dtd="paquet">
 <zip>
 	<file>image_responsive.zip</file>
-	<size>29589</size>
-	<date>1491826742</date>
+	<size>29648</size>
+	<date>1495131542</date>
 	<source>_plugins_/image_responsive</source>
-	<last_commit>2017-04-10 14:19:02</last_commit>
+	<last_commit>2017-05-18 20:19:01</last_commit>
 </zip>
 
 <paquet
 	prefix="image_responsive"
 	categorie="outil"
-	version="7.3.4"
+	version="7.3.5"
 	etat="stable"
 	compatibilite="[3.0.0;3.1.*]"
 	documentation="http://www.paris-beyrouth.org/Plugin-SPIP-Image-responsive"	
@@ -32782,10 +32861,10 @@ Ce plugin est un trou de sécurité, NE PAS ACTIVER EN PRODUCTION !
 <archive id="info_spip.zip" dtd="paquet">
 <zip>
 	<file>info_spip.zip</file>
-	<size>38018</size>
-	<date>1494320644</date>
+	<size>39740</size>
+	<date>1495119842</date>
 	<source>_plugins_/info_spip/trunk</source>
-	<last_commit>2017-05-09 11:04:03</last_commit>
+	<last_commit>2017-05-18 17:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="info_spip" reference="fr">
@@ -32795,7 +32874,7 @@ Ce plugin est un trou de sécurité, NE PAS ACTIVER EN PRODUCTION !
 <paquet
 	prefix="info_spip"
 	categorie="outil"
-	version="0.10.0"
+	version="0.11.0"
 	etat="stable"
 	compatibilite="[2.1.0;3.2.*]"
 	logo="prive/themes/spip/images/info_spip-64.png"
@@ -37936,10 +38015,10 @@ Ic&#244;ne issue de la collection [Farm-Fresh Web Icons->http://www.fatcow.com/f
 <archive id="logos_roles.zip" dtd="paquet">
 <zip>
 	<file>logos_roles.zip</file>
-	<size>24388</size>
-	<date>1494410642</date>
+	<size>24848</size>
+	<date>1494939842</date>
 	<source>_plugins_/logos_roles/trunk</source>
-	<last_commit>2017-05-10 12:04:02</last_commit>
+	<last_commit>2017-05-16 15:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="logos_roles" reference="fr">
@@ -37949,7 +38028,7 @@ Ic&#244;ne issue de la collection [Farm-Fresh Web Icons->http://www.fatcow.com/f
 <paquet
 	prefix="logos_roles"
 	categorie="multimedia"
-	version="0.6.7"
+	version="0.6.9"
 	etat="test"
 	compatibilite="[3.1.1;3.2.*]"
 	logo=""
@@ -39390,6 +39469,51 @@ Le modèle a été testé sous Spip 3.1, mais il n'y a pas à priori de raison p
 	<chemin path="squelettes" />
 	<chemin path="" />
 
+</paquet>
+
+
+
+</archive>
+
+<archive id="medias_responsive_mod.zip" dtd="paquet">
+<zip>
+	<file>medias_responsive_mod.zip</file>
+	<size>17929</size>
+	<date>1495105442</date>
+	<source>_plugins_/medias_responsive_mod</source>
+	<last_commit>2017-05-18 13:04:01</last_commit>
+</zip>
+
+<paquet
+	prefix="medias_responsive_mod"
+	categorie="outil"
+	version="1.8.2"
+	etat="stable"
+	compatibilite="[3.0.0;3.1.*]"
+	logo="imgs/medias_responsive.png"
+	documentation="http://www.paris-beyrouth.org/Plugin-SPIP-Insertion-avancee-d-images"
+>
+
+	<nom>Médias compatibles responsive et modifiés</nom>
+	<!-- Varier les mises en page selon les rubriques, les articles... -->
+
+	<auteur lien="http://www.paris-beyrouth.org">Arnaud Martin / Paris-Beyrouth</auteur>
+
+	<copyright>2014-2015</copyright>
+
+	<licence lien="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3</licence>
+
+	<pipeline nom="insert_head_css" inclure="medias_responsive_pipelines.php" />
+	<pipeline nom="insert_head" inclure="medias_responsive_pipelines.php" />
+	<pipeline nom="header_prive" inclure="medias_responsive_pipelines.php" />
+	<pipeline nom="post_echappe_html_propre" inclure="medias_responsive_pipelines.php" />
+
+	<necessite nom="image_responsive" compatibilite="[1.7.0;[" />
+	<necessite nom="medias" compatibilite="[2.7.27;[" />
+	<chemin path="squelettes" />
+	<chemin path="" />
+	
+	<utilise nom="centre_image" compatibilite="[0.6.0;[" />
 </paquet>
 
 
@@ -45027,10 +45151,10 @@ Once the necessary plugins are activated, simply determine the language of the s
 <archive id="mutualisation_v1.zip" dtd="paquet">
 <zip>
 	<file>mutualisation_v1.zip</file>
-	<size>66947</size>
-	<date>1494235154</date>
+	<size>67065</size>
+	<date>1494767942</date>
 	<source>_plugins_/mutualisation/trunk</source>
-	<last_commit>2017-05-08 11:19:05</last_commit>
+	<last_commit>2017-05-14 15:19:02</last_commit>
 </zip>
 <traductions>
 <traduction module="mutu" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/mutualisation/trunk/lang/" reference="fr">
@@ -45060,7 +45184,7 @@ Once the necessary plugins are activated, simply determine the language of the s
 <paquet
 	prefix="Mutualisation"
 	categorie="maintenance"
-	version="1.3.6"
+	version="1.3.7"
 	etat="stable"
 	compatibilite="[3.0.0;3.1.*]"
 	logo="mutualiser.png"
@@ -46581,10 +46705,10 @@ a <code> <notation|topten> </ code> ktorá vypíše najlepších 10 článkov.
 <archive id="notifications2.zip" dtd="paquet">
 <zip>
 	<file>notifications2.zip</file>
-	<size>77473</size>
-	<date>1494234268</date>
+	<size>77471</size>
+	<date>1494673442</date>
 	<source>_plugins_/notifications/trunk</source>
-	<last_commit>2017-05-08 11:04:06</last_commit>
+	<last_commit>2017-05-13 13:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="notifications" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/notifications/trunk/lang/" reference="fr">
@@ -46643,7 +46767,7 @@ a <code> <notation|topten> </ code> ktorá vypíše najlepších 10 článkov.
 <paquet
 	prefix="notifications"
 	categorie="communication"
-	version="3.5.10"
+	version="3.5.11"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="notifications-32.png"
@@ -47181,10 +47305,10 @@ Varios modelos disponibles:
 <archive id="objets_virtuels.zip" dtd="paquet">
 <zip>
 	<file>objets_virtuels.zip</file>
-	<size>22018</size>
-	<date>1492085042</date>
+	<size>22034</size>
+	<date>1494669842</date>
 	<source>_plugins_/objets_virtuels/trunk</source>
-	<last_commit>2017-04-13 14:04:02</last_commit>
+	<last_commit>2017-05-13 12:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="objets_virtuels" reference="fr">
@@ -47194,11 +47318,11 @@ Varios modelos disponibles:
 <paquet
 	prefix="objets_virtuels"
 	categorie="navigation"
-	version="1.1.1"
+	version="1.1.2"
 	etat="test"
 	compatibilite="[3.1.4;3.2.*]"
 	logo="prive/themes/spip/images/objets_virtuels-64.png"
-	documentation=""
+	documentation="https://contrib.spip.net/4898"
 >
 	<nom>Objets virtuels</nom>
 	<!-- Permet de définir les redirections sur les objets éditoriaux -->
@@ -49743,10 +49867,10 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 <archive id="partageur_3.zip" dtd="paquet">
 <zip>
 	<file>partageur_3.zip</file>
-	<size>42730</size>
-	<date>1491149100</date>
+	<size>43769</size>
+	<date>1494954242</date>
 	<source>_plugins_/partageur/trunk</source>
-	<last_commit>2017-04-02 18:04:12</last_commit>
+	<last_commit>2017-05-16 19:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="partageur" reference="fr">
@@ -49756,12 +49880,12 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 <paquet
 	prefix="partageur"
 	categorie="edition"
-	version="1.0.7"
+	version="1.1.0"
 	etat="stable"
 	compatibilite="[3.0.5;3.1.*]"
 	logo="prive/themes/spip/images/partageur-64.png"
 	documentation="https://contrib.spip.net/Partageur"
-	schema="1.1.0" 
+	schema="1.2.0" 
 >
 	<nom>Partageur</nom>
 	<auteur lien='http://www.erational.org'>erational</auteur>
@@ -49774,6 +49898,7 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 	<pipeline nom="declarer_tables_interfaces" inclure="base/partageur.php" />
 	<pipeline nom="header_prive_css" action="insert_head_prive_css" inclure="partageur_pipelines.php" />
 	<pipeline nom="affiche_enfants" inclure="partageur_pipelines.php" />
+	<pipeline nom="affiche_milieu" inclure="partageur_pipelines.php" />
 
 	<menu nom="partageurs" titre="partageur:titre_partageurs" parent="menu_edition" icone="images/partageur-16.png" action="partageurs" />
 </paquet>
@@ -51860,10 +51985,10 @@ Ce plugin permet de g&#233;rer d'une fen&#234;tre popup ({fen&#234;tre externe})
 <archive id="spipopup_s3.zip" dtd="paquet">
 <zip>
 	<file>spipopup_s3.zip</file>
-	<size>52603</size>
-	<date>1494231560</date>
+	<size>52602</size>
+	<date>1494630242</date>
 	<source>_plugins_/popup/spipopup_spip3</source>
-	<last_commit>2017-05-08 10:19:06</last_commit>
+	<last_commit>2017-05-13 01:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-spipopup" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/popup/spipopup_spip3/lang/" reference="fr">
@@ -51906,12 +52031,12 @@ Ce plugin permet de g&#233;rer d'une fen&#234;tre popup ({fen&#234;tre externe})
 <paquet
 	prefix="spipopup"
 	categorie="multimedia"
-	version="2.0.0"
+	version="2.0.1"
 	etat="stable"
-	compatibilite="[3.0.0;3.0.*]"
+	compatibilite="[3.0.0;3.1.*]"
 	logo="images/popup-128.png"
 	documentation="https://contrib.spip.net/?article3573"
->      
+>
 	<nom>Balise &#035;POPUP</nom>
 	<!-- Gestion d'une fenêtre popup unique -->
 
@@ -51919,7 +52044,7 @@ Ce plugin permet de g&#233;rer d'une fen&#234;tre popup ({fen&#234;tre externe})
 
 	<licence lien="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3</licence>
 
-	<copyright>2010-2012</copyright>
+	<copyright>2010-2017</copyright>
 
 	<traduire module="spipopup" reference="fr" gestionnaire="salvatore" />
 
@@ -58032,10 +58157,10 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 <archive id="saisies_v2.zip" dtd="paquet">
 <zip>
 	<file>saisies_v2.zip</file>
-	<size>191307</size>
-	<date>1494111842</date>
+	<size>191577</size>
+	<date>1494587042</date>
 	<source>_plugins_/saisies/trunk</source>
-	<last_commit>2017-05-07 01:04:01</last_commit>
+	<last_commit>2017-05-12 13:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-saisies" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/saisies/trunk/lang/" reference="fr">
@@ -58120,7 +58245,7 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 <paquet
 	prefix="saisies"
 	categorie="outil"
-	version="2.18.13"
+	version="2.18.14"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="images/logo_saisie_48.png"
@@ -61908,10 +62033,10 @@ R&#233;cup&#233;ration et mise en base des exports SITRA, gestion des exports mu
 <archive id="slick.zip" dtd="paquet">
 <zip>
 	<file>slick.zip</file>
-	<size>56582</size>
-	<date>1480267142</date>
+	<size>57650</size>
+	<date>1495109042</date>
 	<source>_plugins_/slick/trunk</source>
-	<last_commit>2016-11-27 18:19:02</last_commit>
+	<last_commit>2017-05-18 14:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="slick" reference="fr">
@@ -61921,12 +62046,12 @@ R&#233;cup&#233;ration et mise en base des exports SITRA, gestion des exports mu
 <paquet
 	prefix="slick"
 	categorie="multimedia"
-	version="1.1.3"
-	etat="dev"
-	compatibilite="[3.0.0;3.1.*]"
+	version="1.2.3"
+	etat="test"
+	compatibilite="[3.0.0;3.2.*]"
 	logo="prive/themes/spip/images/slick-64.png"
 	schema="1.0"
-	documentation=""
+	documentation="https://contrib.spip.net/?article4897"
 >
 	<nom>Slick</nom>
 
@@ -63593,10 +63718,10 @@ et si vous utilisez agenda, <code>http://www.domaine.tld/spip.php?page=backend-s
 <archive id="spip2spip_3_0.zip" dtd="paquet">
 <zip>
 	<file>spip2spip_3_0.zip</file>
-	<size>35652</size>
-	<date>1491843896</date>
+	<size>36721</size>
+	<date>1494968642</date>
 	<source>_plugins_/spip2spip/trunk</source>
-	<last_commit>2017-04-10 19:04:12</last_commit>
+	<last_commit>2017-05-16 23:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="spip2spip" reference="fr">
@@ -63606,12 +63731,12 @@ et si vous utilisez agenda, <code>http://www.domaine.tld/spip.php?page=backend-s
 <paquet
 	prefix="spip2spip"
 	categorie="edition"
-	version="3.2.3"
+	version="3.3.0"
 	etat="stable"
 	compatibilite="[3.0.20;3.1.*]"
 	logo="prive/themes/spip/images/spip2spip-32.png"
 	documentation="https://contrib.spip.net/Spip2Spip"
-	schema="1.2.0"
+	schema="1.3.0"
 	>
 
 	<nom>Spip2Spip</nom>
@@ -63624,6 +63749,7 @@ et si vous utilisez agenda, <code>http://www.domaine.tld/spip.php?page=backend-s
 	<pipeline nom="declarer_tables_interfaces" inclure="base/spip2spip.php" />
 	<pipeline nom="taches_generales_cron" inclure="spip2spip_pipelines.php" />
 	<pipeline nom="header_prive" inclure="spip2spip_pipelines.php" />
+	<pipeline nom="affiche_milieu" inclure="spip2spip_pipelines.php" />
 
 	<menu nom="spip2spips" titre="spip2spip:titre_spip2spips" parent="menu_edition" icone="images/spip2spip-16.png" action="spip2spips" />
 </paquet>
@@ -70378,10 +70504,10 @@ E para poder se beneficiar de um sistema de tradução semelhante a esteduções
 <archive id="transaction.zip" dtd="plugin">
 <zip>
 	<file>transaction.zip</file>
-	<size>176426</size>
-	<date>1491149114</date>
+	<size>176418</size>
+	<date>1495124342</date>
 	<source>_plugins_/transaction</source>
-	<last_commit>2017-04-02 18:04:12</last_commit>
+	<last_commit>2017-05-18 18:19:01</last_commit>
 </zip>
 <traductions>
 <traduction module="transaction" reference="fr">
@@ -70394,7 +70520,7 @@ E para poder se beneficiar de um sistema de tradução semelhante a esteduções
 	<slogan>Module de paiement pour Formidable</slogan>
 	<auteur>Arnault Pachot, Emmanuel Nurit</auteur>
 	<licence>GPL v3</licence>
-	<version>0.4.1</version>
+	<version>0.4.3</version>
 	<version_base>0.1</version_base>
 	<etat>dev</etat>
 	<description>Champs additionnels de paiement en ligne pour le plugin Formidable
@@ -72592,10 +72718,10 @@ WebM und Mkv sogar auf mobilen Endgeräten.
 <archive id="w3css.zip" dtd="paquet">
 <zip>
 	<file>w3css.zip</file>
-	<size>17124</size>
-	<date>1490011442</date>
+	<size>17176</size>
+	<date>1495065842</date>
 	<source>_plugins_/w3css/trunk</source>
-	<last_commit>2017-03-20 13:04:02</last_commit>
+	<last_commit>2017-05-18 02:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="w3css" reference="fr">
@@ -72605,7 +72731,7 @@ WebM und Mkv sogar auf mobilen Endgeräten.
 <paquet
 	prefix="w3css"
 	categorie="outil"
-	version="2.99.0"
+	version="4.4.0"
 	etat="test"
 	compatibilite="[3.0.0;3.1.*]"
 	logo="images/w3css-64.png"
@@ -75537,10 +75663,10 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <archive id="escal_V3.zip" dtd="paquet">
 <zip>
 	<file>escal_V3.zip</file>
-	<size>1386104</size>
-	<date>1494518642</date>
+	<size>1408908</size>
+	<date>1495055942</date>
 	<source>_squelettes_/escal/branche_V3</source>
-	<last_commit>2017-05-11 18:04:01</last_commit>
+	<last_commit>2017-05-17 23:19:02</last_commit>
 </zip>
 <traductions>
 <traduction module="escal" reference="fr">
@@ -75560,7 +75686,7 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <paquet
 	prefix="escal"
 	categorie="squelette"
-	version="3.87.9"
+	version="3.87.10"
 	schema="1.0.10"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
@@ -75594,6 +75720,7 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <slogan>
 <multi>
 [fr]Squelette 2 ou 3 colonnes compos&eacute; de nombreuses noisettes
+[it]Template da 2 o 3 colonne composto da svariati blocchi
 </multi>
 </slogan>
 <description>
@@ -75619,6 +75746,27 @@ Maak vooraf de cache leeg om het resultaat te zien.
 -* une feuille de style sp&eacute;ciale pour l&#39;impression des articles
 -* une zone de connexion en page d&#39;accueil (2 choix possibles d&#39;affichage)
 -* un ensemble valide XHTML Strict 1.0
+[it]Adatto per la versione 3 di SPIP, ti offre:
+-* una configurazione avanzata dall'Area Privata;
+-* un layout configurabile su 2 o 3 colonne scegliendo un foglio di stile;
+-* una gestione del multilinguismo;
+-* un forum semplice, in stile phpBB;
+-* un'ampia selezione di blocchi da visualizzare o meno, alcuni forse ridondanti: identificazione, menù orizzontale e/o verticale;
+-* dei blocchi laterali a cui è possibile cambiare posizione, colori e contenuti;
+-* un menu orizzontale e/o verticale (2 a scelta) dinamico per sviluppare al meglio il tema di attualità;
+-* il reindirizzamento automatico dell'articolo verso la sua rubrica;
+-* la navigazione per parole chiave;
+-* un calendario e/o una lista di eventi;
+-* la visualizzazione degli ultimi articoli o degli articoli della stessa sezione;
+-* la visualizzazione delle sotto-rubriche e degli articoli in ogni pagina tematica;
+-* la visualizzazione del forum degli articoli;
+-* un modulo di contatto degli autori (se hanno indicato la loro e-mail);
+-* una pagina contatto avanzata;
+-* la mappa del sito;
+-* un file di back-end per i siti in syndication;
+-* un foglio di stile dedicato alla stampa degli articoli;
+-* la form di login dalla home page (2 scelte di visualizzaione possibile);
+-* un set "XHTML Strict 1.0" valido.
 </multi>
 </description>
 </multis>
@@ -76655,13 +76803,64 @@ Un squelette de portail d&#8217;Etablissement, destin&#233;e &#224; une &#233;co
 
 </archive>
 
+<archive id="html5up_alpha.zip" dtd="paquet">
+<zip>
+	<file>html5up_alpha.zip</file>
+	<size>1560011</size>
+	<date>1494835442</date>
+	<source>_squelettes_/html5up_alpha</source>
+	<last_commit>2017-05-15 10:04:02</last_commit>
+</zip>
+<traductions>
+<traduction module="alpha" reference="fr">
+</traduction>
+</traductions>
+
+<paquet
+	prefix="alpha"
+	categorie="squelette"
+	version="1.0.2"
+	etat="test"
+	compatibilite="[3.0.0;3.1.*]"
+	logo="images/alpha-64.png"
+	schema="0.0.0"
+	documentation="https://contrib.spip.net/alpha"
+>
+
+	<nom>Html5Up Alpha</nom>
+	<auteur>Ben.</auteur>
+	<auteur lien="http://html5up.net">html5up</auteur>
+	<licence lien="http://html5up.net/license">CC-By</licence>
+
+	<necessite nom="saisies" compatibilite="[1.1.14;]" />
+	<utilise nom="mailshot" compatibilite="[1.7.2;]"/>
+	<utilise nom="newsletters" compatibilite="[1.3.24;]"/>
+	<utilise nom="mailsubscribers" compatibilite="[1.7.14;]"/>
+
+</paquet>
+<multis>
+<slogan>
+<multi>
+[fr]Thème Alpha https://html5up.net/alpha
+</multi>
+</slogan>
+<description>
+<multi>
+[fr]Ce plugin permet de reprendre le design proposé sur Html5Up .
+</multi>
+</description>
+</multis>
+
+
+</archive>
+
 <archive id="html5up_strongly_typed.zip" dtd="paquet">
 <zip>
 	<file>html5up_strongly_typed.zip</file>
-	<size>1591643</size>
-	<date>1494525842</date>
+	<size>1593091</size>
+	<date>1494883142</date>
 	<source>_squelettes_/html5up_strongly_typed</source>
-	<last_commit>2017-05-11 20:04:01</last_commit>
+	<last_commit>2017-05-15 23:19:02</last_commit>
 </zip>
 
 <paquet
@@ -78555,10 +78754,10 @@ Pour disposer d'un site SPIP incluant des fonctions g&#233;n&#233;riques, largem
 <archive id="soyezcreateurs_rebirth.zip" dtd="plugin">
 <zip>
 	<file>soyezcreateurs_rebirth.zip</file>
-	<size>2323230</size>
-	<date>1494163144</date>
+	<size>2323362</size>
+	<date>1494882242</date>
 	<source>_squelettes_/soyezcreateurs_net/branches/plugin_2.1_rebirth/plugins/soyezcreateurs</source>
-	<last_commit>2017-05-07 15:19:02</last_commit>
+	<last_commit>2017-05-15 23:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="soyezcreateurs" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_squelettes_/soyezcreateurs_net/trunk/plugins/soyezcreateurs/lang/" reference="fr">
@@ -78610,10 +78809,10 @@ Pour disposer d'un site SPIP incluant des fonctions g&#233;n&#233;riques, largem
 	<nom>Squelette SoyezCr&#233;ateurs Rebirth</nom>
 	<slogan>Largement configurable et adaptable, g&#233;n&#233;rique, conforme aux normes d'accessibilit&#233; et RWD</slogan>
 	<auteur>[RealET->https://contrib.spip.net/_RealET_]</auteur>
-	<licence>&#169; 2003-2013 - GPL</licence>
+	<licence>&#169; 2003-2017 - GPL</licence>
 	<lien>https://contrib.spip.net/SoyezCreateurs,1237?tri_articles=titre</lien>
 	
-	<version>3.50.20</version>
+	<version>3.50.21</version>
 	<version_base>3.0.35</version_base>
 	
 	<etat>stable</etat>
@@ -78816,10 +79015,10 @@ Pour disposer d'un site SPIP incluant des fonctions g&#233;n&#233;riques, largem
 <archive id="soyezcreateurs_rebirth_4.zip" dtd="paquet">
 <zip>
 	<file>soyezcreateurs_rebirth_4.zip</file>
-	<size>2431008</size>
-	<date>1494216244</date>
+	<size>2431145</size>
+	<date>1494907442</date>
 	<source>_squelettes_/soyezcreateurs_net/trunk/plugins/soyezcreateurs</source>
-	<last_commit>2017-05-08 06:04:03</last_commit>
+	<last_commit>2017-05-16 06:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="soyezcreateurs" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_squelettes_/soyezcreateurs_net/trunk/plugins/soyezcreateurs/lang/" reference="fr">
@@ -78830,7 +79029,7 @@ Pour disposer d'un site SPIP incluant des fonctions g&#233;n&#233;riques, largem
 		<traducteur nom="kennethkeen" lien="https://trad.spip.net/auteur/kennethkeen" />
 		<traducteur nom="RealET" lien="https://trad.spip.net/auteur/realet" />
 	</langue>
-	<langue code="en" url="https://trad.spip.net/tradlang_module/soyezcreateurs?lang_cible=en" total="169" traduits="166" relire="0" modifs="2" nouveaux="1" pourcent="98.22">
+	<langue code="en" url="https://trad.spip.net/tradlang_module/soyezcreateurs?lang_cible=en" total="169" traduits="167" relire="0" modifs="1" nouveaux="1" pourcent="98.82">
 		<traducteur nom="Benitron" lien="https://trad.spip.net/auteur/benitron" />
 		<traducteur nom="EScott" lien="https://trad.spip.net/auteur/escott" />
 		<traducteur nom="JohnLonie" lien="https://trad.spip.net/auteur/johnlonie-6942" />
@@ -78881,7 +79080,7 @@ Pour disposer d'un site SPIP incluant des fonctions g&#233;n&#233;riques, largem
 <paquet
 	prefix="soyezcreateurs"
 	categorie="squelette"
-	version="4.0.99"
+	version="4.0.100"
 	etat="stable"
 	compatibilite="[3.0.25;3.2.*]"
 	logo="img_pack/soyezcreateurs_48.png"
@@ -79186,6 +79385,38 @@ Pour disposer d'un site SPIP incluant des fonctions génériques, largement conf
 </multi>
 </description>
 </multis>
+
+
+</archive>
+
+<archive id="spip_reset_v3.zip" dtd="paquet">
+<zip>
+	<file>spip_reset_v3.zip</file>
+	<size>10940</size>
+	<date>1491851052</date>
+	<source>_squelettes_/spip_reset/trunk</source>
+	<last_commit>2017-04-10 21:04:04</last_commit>
+</zip>
+
+<paquet
+	prefix="spip_reset"
+	categorie="squelette"
+	version="3.0.0"
+	etat="stable"
+	compatibilite="[3.0.0;3.1.*]"
+	logo="prive/themes/spip/images/spip_reset_48.png"
+	documentation="https://contrib.spip.net/?article3873"
+>
+
+	<nom>SPIP reset</nom>
+	<!-- Evitez les diffusions involontaires ! -->
+
+	<auteur lien='https://contrib.spip.net/_Jacques-PYRAT_'>Jacques</auteur>
+
+	<licence lien="http://www.gnu.org/licenses/gpl-3.0.html">GNU/GPL</licence>
+	<chemin dir='' />
+</paquet>
+
 
 
 </archive>

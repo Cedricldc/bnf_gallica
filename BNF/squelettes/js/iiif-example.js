@@ -24,8 +24,22 @@ function onMapClick(e) {
     var html = "Marker "+id;
 
     marker = new L.marker(e.latlng, {id:id, draggable:'true'}).bindPopup('<form class="pure-form pure-form-aligned">'+
+'<form class="well form-horizontal" action="#CHEMIN{marker.php}" method="post"  id="contact_form">'+
 '    <fieldset>'+
 '        <div class="pure-control-group">'+
+'<label for="category">Catégorie</label>'+
+"<select name='category'>"+
+  "<option value=' ' >Choisissez une catégorie</option>"+
+  "<option>Aventure</option>"+
+  "<option>Voyage</option>"+
+  "<option >Anecdote</option>"+
+  "<option >Cuisine</option>"+
+  "<option >Histoire</option>"+
+  "<option >Informations</option>"+
+  "<option >Avis</option>"+
+"</select>"+
+'        </div>'+
+/*'        <div class="pure-control-group">'+
 '            <label for="name">Username</label>'+
 '            <input id="name" type="text" placeholder="Username">'+
 '            <span class="pure-form-message-inline">This is a required field.</span>'+
@@ -37,17 +51,18 @@ function onMapClick(e) {
 '        <div class="pure-control-group">'+
 '            <label for="email">Email Address</label>'+
 '            <input id="email" type="email" placeholder="Email Address">'+
-'        </div>'+
+'        </div>'+*/
 '        <div class="pure-control-group">'+
-'            <label for="foo">Supercalifragilistic Label</label>'+
-'            <input id="foo" type="text" placeholder="Enter something here...">'+
+'            <label for="commentaire">Commentaire</label>'+
+'            <textarea id="commentaire" placeholder="Entrez votre commentaire ici..."></textarea>'+
 '        </div>'+
-'        <div class="pure-controls">'+
+'<input name="creer" type="submit" value="Publier" class="pure-button pure-button-primary"">'+
+/*'        <div class="pure-controls">'+
 '            <label for="cb" class="pure-checkbox">'+
 '                <input id="cb" type="checkbox"> Ive read the terms and conditions'+
 '            </label>'+
 '            <button type="submit" class="pure-button pure-button-primary">Submit</button>'+
-'        </div>'+
+'        </div>'+*/
 '    </fieldset>'+
 '</form>');
     arrMarker.push(marker);
@@ -60,8 +75,8 @@ function onMapClick(e) {
     map.addLayer(marker);
 };
 
-stanfordMlk = L.tileLayer.iiif('http://gallica.bnf.fr/iiif/ark:/12148/btv1b8491433m/f1/info.json', {
-  attribution: '<a href="http://searchworks.stanford.edu/view/hg676jb4964">Martin Luther King Jr. & Joan Baez march to integrate schools, Grenada, MS, 1966</a>',
+stanfordMlk = L.tileLayer.iiif('http://gallica.bnf.fr/iiif/ark:/12148/btv1b550070757/f1/info.json', {
+  attribution: '<a href="http://gallica.bnf.fr/iiif/ark:/12148/btv1b550070757">World map</a>',
   maxZoom: 5
 }).addTo(map);
 
@@ -88,7 +103,7 @@ scottlandBagpipe = L.tileLayer.iiif('http://images.is.ed.ac.uk/luna/servlet/iiif
 staticTiles = L.tileLayer.iiif('http://evil-manifests.davidnewbury.com/iiif/images/garden-1/info.json');
 
 iiifLayers = {
-  'Martin Luther King Jr. & Joan Baez ...': stanfordMlk,
+  'blabla': stanfordMlk,
   'The provinces of New York and N...': princetonMap,
   'Apostle: Anonymous sculptor of Fl...': apostle,
   'ManuscritKalîla et Dimna, avec de...': bnf,

@@ -1,5 +1,5 @@
 ;(function () {
-	
+
 	'use strict';
 
 	var isMobile = {
@@ -25,14 +25,14 @@
 
 
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -96,9 +96,9 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
-		  	
+
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
 		  	}
@@ -134,8 +134,8 @@
 						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
 					}, 100 );
 				}
-			} 
-			
+			}
+
 		});
 	};
 
@@ -143,79 +143,134 @@
 	// Animations
 	// Home
 	var homeAnimate = function() {
-		if ( $('#fh5co-home').length > 0 ) {	
+		if ( $('#fh5co-home').length > 0 ) {
 
 			$('#fh5co-home').waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
 						$('#fh5co-home .to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
 		}
 	};
 
+
+	var teaserAnimate = function() {
+
+		var teaser = $('#fh5co-teaser');
+		if ( teaser.length > 0 ) {
+
+			teaser.waypoint( function( direction ) {
+
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						teaser.find('.to-animate').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 200);
+
+					setTimeout(function() {
+						teaser.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 700);
+
+					setTimeout(function() {
+						teaser.find('.to-animate-3').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInRight animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 1000);
+
+
+					$(this.element).addClass('animated');
+
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
+
+
 	var exploreAnimate = function() {
 
 		var explore = $('#fh5co-explore');
-		if ( explore.length > 0 ) {	
+		if ( explore.length > 0 ) {
 
 			explore.waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
 						explore.find('.to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
 					setTimeout(function() {
 						explore.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('bounceIn animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 700);
 
 					setTimeout(function() {
 						explore.find('.to-animate-3').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInRight animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 1000);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
@@ -224,38 +279,38 @@
 
 	var gettingStartedAnimate = function() {
 		var started = $('.getting-started-1');
-		if ( started.length > 0 ) {	
+		if ( started.length > 0 ) {
 
 			started.waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
 						started.find('.to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
 					setTimeout(function() {
 						started.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInRight animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
@@ -265,38 +320,38 @@
 
 	var pricingAnimate = function() {
 		var pricing = $('#fh5co-pricing');
-		if ( pricing.length > 0 ) {	
+		if ( pricing.length > 0 ) {
 
 			pricing.waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
 						pricing.find('.to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeIn animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
 					setTimeout(function() {
 						pricing.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
@@ -306,10 +361,10 @@
 
 	var servicesAnimate = function() {
 		var services = $('#fh5co-services');
-		if ( services.length > 0 ) {	
+		if ( services.length > 0 ) {
 
 			services.waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
@@ -319,28 +374,28 @@
 					setTimeout(function() {
 						services.find('.to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
 					setTimeout(function() {
 						services.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('bounceIn animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, sec);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
@@ -350,10 +405,10 @@
 
 	var teamAnimate = function() {
 		var team = $('#fh5co-team');
-		if ( team.length > 0 ) {	
+		if ( team.length > 0 ) {
 
 			team.waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 					var sec = team.find('.to-animate').length,
@@ -362,28 +417,28 @@
 					setTimeout(function() {
 						team.find('.to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeIn animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
 					setTimeout(function() {
 						team.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, sec);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
@@ -391,28 +446,82 @@
 	};
 
 
+		var appliAnimate = function() {
+
+			var appli = $('#fh5co-appli');
+			if ( appli.length > 0 ) {
+
+				appli.waypoint( function( direction ) {
+
+					if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+						setTimeout(function() {
+							appli.find('.to-animate').each(function( k ) {
+								var el = $(this);
+
+								setTimeout ( function () {
+									el.addClass('fadeInUp animated');
+								},  k * 200, 'easeInOutExpo' );
+
+							});
+						}, 200);
+
+						setTimeout(function() {
+							appli.find('.to-animate-2').each(function( k ) {
+								var el = $(this);
+
+								setTimeout ( function () {
+									el.addClass('bounceIn animated');
+								},  k * 200, 'easeInOutExpo' );
+
+							});
+						}, 700);
+
+						setTimeout(function() {
+							appli.find('.to-animate-3').each(function( k ) {
+								var el = $(this);
+
+								setTimeout ( function () {
+									el.addClass('fadeInRight animated');
+								},  k * 200, 'easeInOutExpo' );
+
+							});
+						}, 1000);
+
+
+						$(this.element).addClass('animated');
+
+					}
+				} , { offset: '80%' } );
+
+			}
+		};
+
+
+
 	var footerAnimate = function() {
 		var footer = $('#fh5co-footer');
-		if ( footer.length > 0 ) {	
+		if ( footer.length > 0 ) {
 
 			footer.waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 					setTimeout(function() {
 						footer.find('.to-animate').each(function( k ) {
 							var el = $(this);
-							
+
 							setTimeout ( function () {
 								el.addClass('fadeIn animated');
 							},  k * 200, 'easeInOutExpo' );
-							
+
 						});
 					}, 200);
 
-					
+
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '80%' } );
 
@@ -431,11 +540,11 @@
 	var counterWayPoint = function() {
 		if ($('#fh5co-counter-section').length > 0 ) {
 			$('#fh5co-counter-section').waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
+					setTimeout( counter , 400);
 					$(this.element).addClass('animated');
-						
+
 				}
 			} , { offset: '90%' } );
 		}
@@ -448,14 +557,16 @@
 		clickMenu();
 		windowScroll();
 		navigationSection();
-		
+
 		// Animations
 		homeAnimate();
+		teaserAnimate();
 		exploreAnimate();
 		gettingStartedAnimate();
 		pricingAnimate();
 		servicesAnimate();
 		teamAnimate();
+		appliAnimate();
 		footerAnimate();
 		counter();
 		counterWayPoint();
