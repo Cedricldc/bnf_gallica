@@ -12416,10 +12416,10 @@ Ce plugin n&#233;ecessite la pr&#233;sence de libxslt sur votre serveur, utilisa
 <archive id="commandes_v1.zip" dtd="paquet">
 <zip>
 	<file>commandes_v1.zip</file>
-	<size>106575</size>
-	<date>1495199042</date>
+	<size>107257</size>
+	<date>1495623842</date>
 	<source>_plugins_/commandes/trunk</source>
-	<last_commit>2017-05-19 15:04:01</last_commit>
+	<last_commit>2017-05-24 13:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="commandes" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/commandes/trunk/lang/" reference="fr">
@@ -12447,12 +12447,12 @@ Ce plugin n&#233;ecessite la pr&#233;sence de libxslt sur votre serveur, utilisa
 <paquet
 	prefix="commandes"
 	categorie="divers"
-	version="1.10.0"
+	version="1.12.0"
 	etat="stable"
 	compatibilite="[3.0.5;3.1.*]"
 	logo="prive/themes/spip/images/commande.png"
 	documentation="https://contrib.spip.net/Commandes-4527"
-	schema="0.7.5"
+	schema="0.7.6"
 >
 	
 	<nom>Commandes</nom>
@@ -23566,10 +23566,10 @@ perfect plugin, but a solid, quick to set up, to then edit to your liking.
 <archive id="facteur-3.0.zip" dtd="paquet">
 <zip>
 	<file>facteur-3.0.zip</file>
-	<size>228758</size>
-	<date>1493093044</date>
+	<size>228848</size>
+	<date>1495598642</date>
 	<source>_plugins_/facteur/trunk</source>
-	<last_commit>2017-04-25 06:04:03</last_commit>
+	<last_commit>2017-05-24 06:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="facteur" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/facteur/trunk/lang/" reference="fr">
@@ -23599,7 +23599,7 @@ perfect plugin, but a solid, quick to set up, to then edit to your liking.
 	<langue code="it" url="https://trad.spip.net/tradlang_module/facteur?lang_cible=it" total="55" traduits="40" relire="0" modifs="9" nouveaux="6" pourcent="72.73">
 		<traducteur nom="kent1" lien="https://trad.spip.net/auteur/kent1" />
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/facteur?lang_cible=nl" total="55" traduits="52" relire="0" modifs="0" nouveaux="3" pourcent="94.55">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/facteur?lang_cible=nl" total="55" traduits="55" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 	</langue>
 	<langue code="oc_ni_mis" url="https://trad.spip.net/tradlang_module/facteur?lang_cible=oc_ni_mis" total="55" traduits="43" relire="0" modifs="7" nouveaux="5" pourcent="78.18">
@@ -25570,10 +25570,10 @@ Une page de démonstration est disponible à l'adresse {{?page=demo/fonctions_im
 <archive id="formidable.zip" dtd="paquet">
 <zip>
 	<file>formidable.zip</file>
-	<size>227535</size>
-	<date>1493910244</date>
+	<size>227536</size>
+	<date>1495533842</date>
 	<source>_plugins_/formidable/trunk</source>
-	<last_commit>2017-05-04 17:04:03</last_commit>
+	<last_commit>2017-05-23 12:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="formidable" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/formidable/trunk/lang/" reference="fr">
@@ -32129,16 +32129,16 @@ Utilisation :
 <archive id="image_responsive.zip" dtd="paquet">
 <zip>
 	<file>image_responsive.zip</file>
-	<size>29648</size>
-	<date>1495131542</date>
+	<size>36279</size>
+	<date>1495544642</date>
 	<source>_plugins_/image_responsive</source>
-	<last_commit>2017-05-18 20:19:01</last_commit>
+	<last_commit>2017-05-23 15:04:02</last_commit>
 </zip>
 
 <paquet
 	prefix="image_responsive"
 	categorie="outil"
-	version="7.3.5"
+	version="7.5.1"
 	etat="stable"
 	compatibilite="[3.0.0;3.1.*]"
 	documentation="http://www.paris-beyrouth.org/Plugin-SPIP-Image-responsive"	
@@ -44973,10 +44973,10 @@ Once the necessary plugins are activated, simply determine the language of the s
 <archive id="multilang.zip" dtd="paquet">
 <zip>
 	<file>multilang.zip</file>
-	<size>55025</size>
-	<date>1491843880</date>
+	<size>55228</size>
+	<date>1495551842</date>
 	<source>_plugins_/multilang/trunk</source>
-	<last_commit>2017-04-10 19:04:12</last_commit>
+	<last_commit>2017-05-23 17:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="multilang" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/multilang/trunk/lang/" reference="fr">
@@ -45040,11 +45040,11 @@ Once the necessary plugins are activated, simply determine the language of the s
 <paquet
 	prefix="multilang"
 	categorie="edition"
-	version="1.2.1"
+	version="1.2.2"
 	etat="stable"
 	compatibilite="[3.0.0;3.1.*]"
 	logo="images/multilang-32.png"
-	schema="0.1"
+	schema="0.1.0"
 	documentation="https://contrib.spip.net/?article3498"
 >	
 
@@ -46705,10 +46705,10 @@ a <code> <notation|topten> </ code> ktorá vypíše najlepších 10 článkov.
 <archive id="notifications2.zip" dtd="paquet">
 <zip>
 	<file>notifications2.zip</file>
-	<size>77471</size>
-	<date>1494673442</date>
+	<size>77539</size>
+	<date>1495598644</date>
 	<source>_plugins_/notifications/trunk</source>
-	<last_commit>2017-05-13 13:04:01</last_commit>
+	<last_commit>2017-05-24 06:04:03</last_commit>
 </zip>
 <traductions>
 <traduction module="notifications" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/notifications/trunk/lang/" reference="fr">
@@ -46731,7 +46731,7 @@ a <code> <notation|topten> </ code> ktorá vypíše najlepších 10 článkov.
 	</langue>
 	<langue code="fr" url="https://trad.spip.net/tradlang_module/notifications?lang_cible=fr" total="95" traduits="95" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/notifications?lang_cible=nl" total="95" traduits="91" relire="0" modifs="1" nouveaux="3" pourcent="95.79">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/notifications?lang_cible=nl" total="95" traduits="95" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 	</langue>
 	<langue code="sk" url="https://trad.spip.net/tradlang_module/notifications?lang_cible=sk" total="95" traduits="78" relire="0" modifs="6" nouveaux="11" pourcent="82.11">
@@ -48131,10 +48131,10 @@ _ La conversion des formules mathématiques repose sur la librairie XSLT {{MathM
 <archive id="ordoc.zip" dtd="paquet">
 <zip>
 	<file>ordoc.zip</file>
-	<size>27752</size>
-	<date>1485173942</date>
+	<size>27749</size>
+	<date>1495533842</date>
 	<source>_plugins_/ordoc/trunk</source>
-	<last_commit>2017-01-23 13:19:01</last_commit>
+	<last_commit>2017-05-23 12:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="ordoc" reference="fr">
@@ -49134,10 +49134,10 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 <archive id="palette_3.zip" dtd="paquet">
 <zip>
 	<file>palette_3.zip</file>
-	<size>42780</size>
-	<date>1494238744</date>
+	<size>42774</size>
+	<date>1495598644</date>
 	<source>_plugins_/palette/trunk</source>
-	<last_commit>2017-05-08 12:19:02</last_commit>
+	<last_commit>2017-05-24 06:04:03</last_commit>
 </zip>
 <traductions>
 <traduction module="palette" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/palette/trunk/lang/" reference="fr">
@@ -49161,7 +49161,7 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 	<langue code="fr_tu" url="https://trad.spip.net/tradlang_module/palette?lang_cible=fr_tu" total="7" traduits="6" relire="0" modifs="1" nouveaux="0" pourcent="85.71">
 		<traducteur nom="beatnick" lien="https://trad.spip.net/auteur/beatnick" />
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/palette?lang_cible=nl" total="7" traduits="6" relire="0" modifs="1" nouveaux="0" pourcent="85.71">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/palette?lang_cible=nl" total="7" traduits="7" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 	</langue>
 	<langue code="sk" url="https://trad.spip.net/tradlang_module/palette?lang_cible=sk" total="7" traduits="6" relire="0" modifs="1" nouveaux="0" pourcent="85.71">
@@ -49450,10 +49450,10 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 <archive id="paniers_v1.zip" dtd="paquet">
 <zip>
 	<file>paniers_v1.zip</file>
-	<size>38320</size>
-	<date>1491840242</date>
+	<size>38327</size>
+	<date>1495451042</date>
 	<source>_plugins_/paniers/trunk</source>
-	<last_commit>2017-04-10 18:04:01</last_commit>
+	<last_commit>2017-05-22 13:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="paniers" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/paniers/trunk/lang/" reference="fr">
@@ -49483,7 +49483,7 @@ To vám umožňuje vytvárať stránky s informáciami právneho charakteru, č
 <paquet
 	prefix="paniers"
 	categorie="divers"
-	version="1.1.0"
+	version="1.1.1"
 	etat="test"
 	compatibilite="[3.0.0;3.1.*]"
 	logo="prive/themes/spip/images/paniers-32.png"
@@ -51985,10 +51985,10 @@ Ce plugin permet de g&#233;rer d'une fen&#234;tre popup ({fen&#234;tre externe})
 <archive id="spipopup_s3.zip" dtd="paquet">
 <zip>
 	<file>spipopup_s3.zip</file>
-	<size>52602</size>
-	<date>1494630242</date>
+	<size>52592</size>
+	<date>1495598644</date>
 	<source>_plugins_/popup/spipopup_spip3</source>
-	<last_commit>2017-05-13 01:04:02</last_commit>
+	<last_commit>2017-05-24 06:04:04</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-spipopup" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/popup/spipopup_spip3/lang/" reference="fr">
@@ -52016,7 +52016,7 @@ Ce plugin permet de g&#233;rer d'une fen&#234;tre popup ({fen&#234;tre externe})
 	</langue>
 	<langue code="fr" url="https://trad.spip.net/tradlang_module/spipopup?lang_cible=fr" total="32" traduits="32" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/spipopup?lang_cible=nl" total="32" traduits="31" relire="0" modifs="1" nouveaux="0" pourcent="96.88">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/spipopup?lang_cible=nl" total="32" traduits="32" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 	</langue>
 	<langue code="pt_br" url="https://trad.spip.net/tradlang_module/spipopup?lang_cible=pt_br" total="32" traduits="31" relire="0" modifs="1" nouveaux="0" pourcent="96.88">
@@ -53386,10 +53386,10 @@ Un simple clic sur une ic&#244;ne propos&#233;e permet d'ajouter dans le texte d
 <archive id="prix_objets.zip" dtd="paquet">
 <zip>
 	<file>prix_objets.zip</file>
-	<size>20876</size>
-	<date>1493143444</date>
+	<size>20848</size>
+	<date>1495476242</date>
 	<source>_plugins_/prix_objets/branches/v1</source>
-	<last_commit>2017-04-25 20:04:03</last_commit>
+	<last_commit>2017-05-22 20:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-prix_objets" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/prix_objets/trunk/lang/" reference="fr">
@@ -53413,7 +53413,7 @@ Un simple clic sur une ic&#244;ne propos&#233;e permet d'ajouter dans le texte d
 <paquet
 	prefix="prix_objets"
 	categorie="edition"
-	version="1.7.4"
+	version="1.7.5"
 	etat="stable"
 	compatibilite="[3.0.5;3.1.*]"
 	logo=""
@@ -56209,10 +56209,10 @@ Ele possui:
 <archive id="reservations_bank.zip" dtd="paquet">
 <zip>
 	<file>reservations_bank.zip</file>
-	<size>78453</size>
-	<date>1494324246</date>
+	<size>78474</size>
+	<date>1495559042</date>
 	<source>_plugins_/reservations_bank/branches/v1</source>
-	<last_commit>2017-05-09 12:04:05</last_commit>
+	<last_commit>2017-05-23 19:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-reservation_bank" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/reservations_bank/trunk/lang/" reference="fr">
@@ -56230,7 +56230,7 @@ Ele possui:
 <paquet
 	prefix="reservation_bank"
 	categorie="outil"
-	version="1.3.4"
+	version="1.3.5"
 	etat="test"
 	compatibilite="[3.0.20;3.1.*]"
 	logo="prive/themes/spip/images/reservation_bank-64.png"
@@ -58157,10 +58157,10 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 <archive id="saisies_v2.zip" dtd="paquet">
 <zip>
 	<file>saisies_v2.zip</file>
-	<size>191642</size>
-	<date>1495188242</date>
+	<size>192164</size>
+	<date>1495598646</date>
 	<source>_plugins_/saisies/trunk</source>
-	<last_commit>2017-05-19 12:04:01</last_commit>
+	<last_commit>2017-05-24 06:04:05</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-saisies" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/saisies/trunk/lang/" reference="fr">
@@ -58223,7 +58223,7 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 	</langue>
 	<langue code="it" url="https://trad.spip.net/tradlang_module/saisies?lang_cible=it" total="176" traduits="139" relire="0" modifs="3" nouveaux="34" pourcent="78.98">
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/saisies?lang_cible=nl" total="176" traduits="173" relire="0" modifs="0" nouveaux="3" pourcent="98.30">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/saisies?lang_cible=nl" total="176" traduits="176" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 		<traducteur nom="mpossoz" lien="https://trad.spip.net/auteur/mpossoz" />
 	</langue>
@@ -58245,7 +58245,7 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 <paquet
 	prefix="saisies"
 	categorie="outil"
-	version="2.18.15"
+	version="2.18.16"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="images/logo_saisie_48.png"
@@ -58566,10 +58566,10 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 <archive id="saveauto_3_0.zip" dtd="paquet">
 <zip>
 	<file>saveauto_3_0.zip</file>
-	<size>55894</size>
-	<date>1494407042</date>
+	<size>55889</size>
+	<date>1495598646</date>
 	<source>_plugins_/saveauto/trunk</source>
-	<last_commit>2017-05-10 11:04:02</last_commit>
+	<last_commit>2017-05-24 06:04:05</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-saveauto" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/saveauto/trunk/lang/" reference="fr">
@@ -58610,7 +58610,7 @@ Pour éviter les doublons et les imports successifs, une fois l'article créé, 
 	</langue>
 	<langue code="fr" url="https://trad.spip.net/tradlang_module/saveauto?lang_cible=fr" total="71" traduits="71" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/saveauto?lang_cible=nl" total="71" traduits="70" relire="0" modifs="1" nouveaux="0" pourcent="98.59">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/saveauto?lang_cible=nl" total="71" traduits="71" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 		<traducteur nom="mpossoz" lien="https://trad.spip.net/auteur/mpossoz" />
 	</langue>
@@ -61694,10 +61694,10 @@ R&#233;cup&#233;ration et mise en base des exports SITRA, gestion des exports mu
 <archive id="sjcycle_v3.zip" dtd="paquet">
 <zip>
 	<file>sjcycle_v3.zip</file>
-	<size>96280</size>
-	<date>1494231564</date>
+	<size>96288</size>
+	<date>1495400642</date>
 	<source>_plugins_/sjcycle/trunk</source>
-	<last_commit>2017-05-08 10:19:06</last_commit>
+	<last_commit>2017-05-21 23:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="faq-sjcycle" reference="fr">
@@ -61713,7 +61713,7 @@ R&#233;cup&#233;ration et mise en base des exports SITRA, gestion des exports mu
 <paquet
 	prefix="sjcycle"
 	categorie="multimedia"
-	version="3.4.19"
+	version="3.4.20"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="prive/themes/spip/images/sjcycle-32.png"
@@ -68328,10 +68328,10 @@ Thumbsites fournit un syst&#232;me de capture d'&#233;cran de site g&#233;n&#233
 <archive id="thumbsites.zip" dtd="paquet">
 <zip>
 	<file>thumbsites.zip</file>
-	<size>40607</size>
-	<date>1491883450</date>
+	<size>40600</size>
+	<date>1495598646</date>
 	<source>_plugins_/thumbsites/trunk</source>
-	<last_commit>2017-04-11 06:04:09</last_commit>
+	<last_commit>2017-05-24 06:04:06</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-thumbsites" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/thumbsites/trunk/lang/" reference="fr">
@@ -68377,7 +68377,7 @@ Thumbsites fournit un syst&#232;me de capture d'&#233;cran de site g&#233;n&#233
 	</langue>
 	<langue code="gl" url="https://trad.spip.net/tradlang_module/thumbsites?lang_cible=gl" total="23" traduits="1" relire="0" modifs="0" nouveaux="22" pourcent="4.35">
 	</langue>
-	<langue code="nl" url="https://trad.spip.net/tradlang_module/thumbsites?lang_cible=nl" total="23" traduits="22" relire="0" modifs="1" nouveaux="0" pourcent="95.65">
+	<langue code="nl" url="https://trad.spip.net/tradlang_module/thumbsites?lang_cible=nl" total="23" traduits="23" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Hanjo" lien="https://trad.spip.net/auteur/hanjo" />
 	</langue>
 	<langue code="pt_br" url="https://trad.spip.net/tradlang_module/thumbsites?lang_cible=pt_br" total="23" traduits="22" relire="0" modifs="1" nouveaux="0" pourcent="95.65">
@@ -75663,10 +75663,10 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <archive id="escal_V3.zip" dtd="paquet">
 <zip>
 	<file>escal_V3.zip</file>
-	<size>1408908</size>
-	<date>1495055942</date>
+	<size>1410114</size>
+	<date>1495393442</date>
 	<source>_squelettes_/escal/branche_V3</source>
-	<last_commit>2017-05-17 23:19:02</last_commit>
+	<last_commit>2017-05-21 21:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="escal" reference="fr">
@@ -75686,8 +75686,8 @@ Maak vooraf de cache leeg om het resultaat te zien.
 <paquet
 	prefix="escal"
 	categorie="squelette"
-	version="3.87.10"
-	schema="1.0.10"
+	version="3.87.11"
+	schema="1.0.11"
 	etat="stable"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="images/escal32.png"
@@ -79015,10 +79015,10 @@ Pour disposer d'un site SPIP incluant des fonctions g&#233;n&#233;riques, largem
 <archive id="soyezcreateurs_rebirth_4.zip" dtd="paquet">
 <zip>
 	<file>soyezcreateurs_rebirth_4.zip</file>
-	<size>2431145</size>
-	<date>1494907442</date>
+	<size>2431235</size>
+	<date>1495458242</date>
 	<source>_squelettes_/soyezcreateurs_net/trunk/plugins/soyezcreateurs</source>
-	<last_commit>2017-05-16 06:04:01</last_commit>
+	<last_commit>2017-05-22 15:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="soyezcreateurs" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_squelettes_/soyezcreateurs_net/trunk/plugins/soyezcreateurs/lang/" reference="fr">

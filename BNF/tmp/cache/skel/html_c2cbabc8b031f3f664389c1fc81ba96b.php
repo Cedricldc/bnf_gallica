@@ -1,14 +1,14 @@
 <?php
 
 /*
- * Squelette : ../plugins-dist/porte_plume/porte_plume_start.js.html
+ * Squelette : plugins-dist/porte_plume/porte_plume_start.js.html
  * Date :      Fri, 07 Apr 2017 13:07:02 GMT
- * Compile :   Fri, 19 May 2017 15:13:44 GMT
+ * Compile :   Mon, 22 May 2017 21:03:08 GMT
  * Boucles :   
  */ 
 //
-// Fonction principale du squelette ../plugins-dist/porte_plume/porte_plume_start.js.html
-// Temps de compilation total: 0.496 ms
+// Fonction principale du squelette plugins-dist/porte_plume/porte_plume_start.js.html
+// Temps de compilation total: 2.247 ms
 //
 
 function html_c2cbabc8b031f3f664389c1fc81ba96b($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -100,6 +100,6 @@ interdire_scripts((((include_spip('inc/config')?lire_config('forums_afficher_bar
 })(jQuery);
 ');
 
-	return analyse_resultat_skel('html_c2cbabc8b031f3f664389c1fc81ba96b', $Cache, $page, '../plugins-dist/porte_plume/porte_plume_start.js.html');
+	return analyse_resultat_skel('html_c2cbabc8b031f3f664389c1fc81ba96b', $Cache, $page, 'plugins-dist/porte_plume/porte_plume_start.js.html');
 }
 ?>

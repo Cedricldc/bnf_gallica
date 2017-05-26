@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/pied.html
- * Date :      Fri, 19 May 2017 11:16:10 GMT
- * Compile :   Fri, 19 May 2017 16:07:52 GMT
+ * Date :      Sun, 21 May 2017 16:52:19 GMT
+ * Compile :   Fri, 26 May 2017 08:26:48 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/pied.html
-// Temps de compilation total: 0.045 ms
+// Temps de compilation total: 0.087 ms
 //
 
 function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -24,7 +24,7 @@ function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(
 			 <section id="fh5co-logo" data-section="logo">
 		<div class="fh5co-logo"></div>
 		<div class="container"></div>
-      <center><p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/boat_logo_white.svg" alt="" width="160" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/logo8.png" alt="" width="250" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/Logo_BnF.svg" alt="" height="160"/></p>
+      <center><p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/boat_logo_white2.svg" alt="" width="160" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/logo8.png" alt="" width="250" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/Logo_BnF.svg" alt="" height="160"/></p>
 
   <br>
         <div class="container text-center">

@@ -2,8 +2,8 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Fri, 19 May 2017 16:07:48 GMT
- * Compile :   Fri, 19 May 2017 16:07:52 GMT
+ * Date :      Thu, 25 May 2017 19:41:48 GMT
+ * Compile :   Fri, 26 May 2017 08:26:48 GMT
  * Boucles :   teaser, histoire, introduction, voy1, cartier, voy2, voyage2, voy3, voyage3, mcautTeam, autTeam, team
  */ 
 
@@ -38,7 +38,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','teaser',35,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','teaser',34,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -99,7 +99,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','histoire',48,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','histoire',47,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -164,7 +164,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','introduction',61,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','introduction',59,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -222,7 +222,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy1',66,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy1',71,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -289,7 +289,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','cartier',80,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','cartier',84,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -347,7 +347,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy2',84,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy2',93,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -416,7 +416,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage2',99,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage2',109,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -474,7 +474,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy3',103,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy3',119,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -543,7 +543,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage3',119,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage3',135,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -599,7 +599,7 @@ function BOUCLEmcautTeamhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','mcautTeam',148,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','mcautTeam',163,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	$SP++;
@@ -657,7 +657,7 @@ quete_condition_statut('auteurs.statut','!5poubelle','!5poubelle',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','autTeam',143,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','autTeam',158,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	$SP++;
@@ -738,7 +738,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','team',131,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','team',146,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -782,7 +782,7 @@ BOUCLEautTeamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 9.901 ms
+// Temps de compilation total: 9.435 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -801,25 +801,28 @@ function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(
 ?'.'>
 
 
-        <section id="fh5co-home" data-section="home" data-stellar-background-ratio="0.5">
+        <section id="fh5co-home" data-section="home" style="background-image: url(' .
+find_in_path('images/cartebglowco.jpg') .
+');background-size:100%; background-repeat: no-repeat; background-color: #121036;" data-stellar-background-ratio="1.5">
             <div class="container">
                 <div class="text-wrap">
                     <div class="text-inner">
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center">
-                                <h1 class="to-animate">' .
+                          <div class="logo_site to-animate"><img class="logo" src="' .
+find_in_path('images/logo_site.svg') .
+'"/></div>
+                            <div class="titles text-center">
+                                <h1 class="title to-animate">' .
 interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])) .
 '</h1>
-                                <h2 class="to-animate">' .
+                                <h2 class="subtitle to-animate" style="line-height:1.2em;">' .
 interdire_scripts(typo($GLOBALS['meta']['slogan_site'], "TYPO", $connect, $Pile[0])) .
 '</h2>
                             </div>
                             <div class="row">
                               <div class="to-animate arrow">
-                                  <a href="#teaser">
                                         <img class="anim-arrow bounce" width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K"
                                         />
-                                  </a>
                               </div>
                             </div>
                         </div>
@@ -851,10 +854,7 @@ BOUCLEteaserhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Num
 BOUCLEhistoirehtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
             <div class="fh5co-project">
-                <div id="map" class="to-animate"></div>
-                <script src="' .
-find_in_path('js/iiif-example.js') .
-'"></script>
+                <div id="map1" class="to-animate mapleaflet"></div>
                 <div class="col-md-12">
                     <span class="position" style="text-align:justify">
                             ' .
@@ -862,31 +862,47 @@ BOUCLEintroductionhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons
 '
   							          </span>
                 </div>
+              </div>
+            </div>
+        </section>
+
+
+        <section id="fh5co-explore2" data-section="explore2">
+          <div class="container">
                 ' .
 BOUCLEvoy1html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
                     <!--image en background?-->
-                    <div class="project-grid to-animate-2" style="background-image: url(' .
-find_in_path('images/fleuve.jpg') .
-');">
-                    </div>
+                    <div id="map2" class="to-animate mapleaflet"></div>
                     <span class="position" style="text-align:justify">
                               ' .
 BOUCLEcartierhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
 							              </span>
+            </div>
+          </section>
+
+          <section id="fh5co-explore3" data-section="explore3">
+            <div class="container">
                     ' .
 BOUCLEvoy2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
-                        <div class="project-grid to-animate-2" style="background-image:  url(' .
-find_in_path('images/nicolay.jpg') .
-');">
-                        </div>
+            </div>
+              <img class=full-image src="' .
+find_in_path('images/map3.jpg') .
+'"/>
+            <div class="container">
                         <span class="position" style="text-align:justify">
                                 ' .
 BOUCLEvoyage2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
 							              </span>
+
+              </div>
+            </section>
+
+            <section id="fh5co-explore4" data-section="explore4">
+              <div class="container">
                         ' .
 BOUCLEvoy3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
@@ -902,7 +918,6 @@ BOUCLEvoyage3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
                               </span>
                             </div>
                 </div>
-              </div>
         </section>
 
         <section id="fh5co-team" data-section="team">
@@ -923,9 +938,19 @@ BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numro
                                     <div class="container">
                                         <div class="col-md-12 section-heading text-center">
                                             <h2 class="to-animate">Application mobile:</h2>
-                                            <h3 class="to-animate"> L\'application mobile de "La france en Amérique" permet de<strong> jouer</strong> avec les cartes à travers une découverte ludique et intéractive !</h3>
-                                            <p class="to-animate"><img class="size-full wp-image-1201 alignnone" src="squelettes/images/tel.png" alt="" width="130" height="230" /></p>
-                                            <a href="squelettes/page_application_mobile.html" class="btn btn-default btn-lg to-animate">Téléchargez !</a>
+                                            <h3 class="to-animate"> L\'application mobile de "La france en Amérique" permet de<strong> jouer</strong> avec les cartes à travers une découverte ludique et interactive !</h3>
+                                            <div class="app-image">
+                                              <img class="to-animate app-visual" src="' .
+find_in_path('images/app.png') .
+'" alt="application"/>
+                                            </div><div class="app-image">
+                                              <img class="to-animate app-visual" src="' .
+find_in_path('images/app2.png') .
+'" alt="application 2"/>
+                                            </div>
+                                            <a href="' .
+find_in_path('page_application_mobile.html') .
+'" class="btn btn-default btn-lg to-animate">Téléchargez !</a>
                                         </div>
                                     </div>
                                 </div>
@@ -933,180 +958,13 @@ BOUCLEteamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numro
                             </div>
                         </div>
                     </section>
-
-
-
-
-
-
-
-
-
-
-                            <!-- Informations inutile
-	<section id="fh5co-pricing" data-section="pricing">
-		<div class="fh5co-pricing">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">Plans Built For Every One</h2>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. </h3>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-3 col-sm-6">
-						<div class="price-box to-animate">
-							<h2 class="pricing-plan">Starter</h2>
-							<div class="price"><sup class="currency">$</sup>7<small>/mo</small></div>
-							<p>Basic customer support for small business</p>
-							<hr>
-							<ul class="pricing-info">
-								<li>10 projects</li>
-								<li>20 Pages</li>
-								<li>20 Emails</li>
-								<li>100 Images</li>
-							</ul>
-							<p><a href="#" class="btn btn-primary">Read More</a></p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="price-box to-animate">
-							<h2 class="pricing-plan">Regular</h2>
-							<div class="price"><sup class="currency">$</sup>19<small>/mo</small></div>
-							<p>Basic customer support for small business</p>
-							<hr>
-							<ul class="pricing-info">
-								<li>15 projects</li>
-								<li>40 Pages</li>
-								<li>40 Emails</li>
-								<li>200 Images</li>
-							</ul>
-							<p><a href="#" class="btn btn-primary">Read More</a></p>
-						</div>
-					</div>
-					<div class="clearfix visible-sm-block"></div>
-					<div class="col-md-3 col-sm-6 to-animate">
-						<div class="price-box popular">
-							<div class="popular-text">Best value</div>
-							<h2 class="pricing-plan">Plus</h2>
-							<div class="price"><sup class="currency">$</sup>79<small>/mo</small></div>
-							<p>Basic customer support for small business</p>
-							<hr>
-							<ul class="pricing-info">
-								<li>Unlimitted projects</li>
-								<li>100 Pages</li>
-								<li>100 Emails</li>
-								<li>700 Images</li>
-							</ul>
-							<p><a href="#" class="btn btn-primary">Read More</a></p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="price-box to-animate">
-							<h2 class="pricing-plan">Enterprise</h2>
-							<div class="price"><sup class="currency">$</sup>125<small>/mo</small></div>
-							<p>Basic customer support for small business</p>
-							<hr>
-							<ul class="pricing-info">
-								<li>Unlimitted projects</li>
-								<li>Unlimitted Pages</li>
-								<li>Unlimitted Emails</li>
-								<li>Unlimitted Images</li>
-							</ul>
-							<p><a href="#" class="btn btn-primary">Read More</a></p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-md-push-3 to-animate">
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	    Fin informations inutile -->
-
-                            <!-- Lien vers leur page et formulaire contact
-	<div class="getting-started getting-started-1">
-		<div class="getting-grid" style="background-image:  url(' .
-find_in_path('images/full_image_1.jpg') .
-');">
-			<div class="desc text-center">
-				<h2>Getting Started</h2>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				<p><a href="#" class="btn btn-primary">Get in touch</a></p>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-footer" role="contentinfo">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 to-animate">
-					<h3 class="section-title">About Us</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-					<p class="copy-right">&copy; 2015 Twist Free Template. <br>All Rights Reserved. <br>
-						Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a>
-						Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a>
-					</p>
-				</div>
-
-				<div class="col-md-4 to-animate">
-					<h3 class="section-title">Our Address</h3>
-					<ul class="contact-info">
-						<li><i class="icon-map-marker"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-						<li><i class="icon-phone"></i>+ 1235 2355 98</li>
-						<li><i class="icon-envelope"></i><a href="#">info@yoursite.com</a></li>
-						<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
-					</ul>
-					<h3 class="section-title">Connect with Us</h3>
-					<ul class="social-media">
-						<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-						<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-						<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-						<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 to-animate">
-					<h3 class="section-title">Drop us a line</h3>
-					<form class="contact-form">
-						<div class="form-group">
-							<label for="name" class="sr-only">Name</label>
-							<input type="name" class="form-control" id="name" placeholder="Name">
-						</div>
-						<div class="form-group">
-							<label for="email" class="sr-only">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<label for="message" class="sr-only">Message</label>
-							<textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	-->
                             ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',349,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',203,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
                                 ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',350,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',204,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
 ');
 

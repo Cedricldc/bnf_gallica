@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/tete.html
- * Date :      Thu, 18 May 2017 14:53:28 GMT
- * Compile :   Fri, 19 May 2017 16:07:52 GMT
+ * Date :      Thu, 25 May 2017 20:30:30 GMT
+ * Compile :   Fri, 26 May 2017 08:26:48 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/tete.html
-// Temps de compilation total: 0.293 ms
+// Temps de compilation total: 0.501 ms
 //
 
 function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -30,55 +30,20 @@ function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(
 interdire_scripts(typo($GLOBALS['meta']['nom_site'], "TYPO", $connect, $Pile[0])) .
 '</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+	<meta name="description" content="La France en Amérique" />
+	<meta name="keywords" content="La France en Amérique, à la découverte du Canada" />
+	<meta name="author" content="Hugo Chaimovitch, Anthony Marques et Cédric Leduc" />
 
-  <!--
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
  <!-- formulairesimple -->
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 
-
- <!-- formulaire -->
- <!--<link rel=\'stylesheet prefetch\' href=\'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\'>
- <link rel=\'stylesheet prefetch\' href=\'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css\'>
- <link rel=\'stylesheet prefetch\' href=\'http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css\'>-->
- <link rel="stylesheet" href="' .
-find_in_path('css/formstyle.css') .
+<!-- Font awesome-->
+<link rel="stylesheet" href="' .
+find_in_path('font-awesome-4.7.0/css/font-awesome.min.css') .
 '">
-
-
- <!-- Font Awesome -->
- <link rel="stylesheet" href="' .
+<link rel="stylesheet" href="' .
 find_in_path('css/leaflet.awesome-markers.css') .
 '">
- <script src="https://use.fontawesome.com/5980899126.js"></script>
-
-
-  <!-- IIIF -->
-  <link rel="stylesheet" href="' .
-find_in_path('css/iiif.css') .
-'">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-  <script src="https://rawgit.com/mejackreed/Leaflet-IIIF/master/leaflet-iiif.js"></script>
-
- <!-- Font Awesome markers -->
-
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -92,7 +57,9 @@ find_in_path('css/iiif.css') .
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="' .
+find_in_path('favicon.ico') .
+'" type="image/x-icon">
 
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 
@@ -126,6 +93,13 @@ find_in_path('js/modernizr-2.6.2.min.js') .
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+<!--leaflet-->
+<link rel="stylesheet" href="' .
+find_in_path('css/leaflet.css') .
+'" />
+
+
 
 	</head>
 	<body>

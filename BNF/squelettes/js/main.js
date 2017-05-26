@@ -66,7 +66,7 @@
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
 			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 0
-			    	}, 500);
+			    	}, 800);
 			   }
 
 		    if ( navbar.is(':visible')) {
@@ -125,14 +125,14 @@
 		   	var header = $('#fh5co-header'),
 				scrlTop = $(this).scrollTop();
 
-			if ( scrlTop > 500 && scrlTop <= 2000 ) {
+			if ( scrlTop > 800 && scrlTop <= 3000 ) {
 				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
-			} else if ( scrlTop <= 500) {
+			} else if ( scrlTop <= 800) {
 				if ( header.hasClass('navbar-fixed-top') ) {
 					header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
 					setTimeout(function(){
 						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
-					}, 100 );
+					}, 200 );
 				}
 			}
 
@@ -276,6 +276,167 @@
 
 		}
 	};
+
+
+	var explore2Animate = function() {
+
+		var explore2 = $('#fh5co-explore2');
+		if ( explore2.length > 0 ) {
+
+			explore2.waypoint( function( direction ) {
+
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						explore2.find('.to-animate').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 200);
+
+					setTimeout(function() {
+						explore2.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 700);
+
+					setTimeout(function() {
+						explore2.find('.to-animate-3').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInRight animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 1000);
+
+
+					$(this.element).addClass('animated');
+
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
+
+
+
+		var explore3Animate = function() {
+
+			var explore3 = $('#fh5co-explore3');
+			if ( explore3.length > 0 ) {
+
+				explore3.waypoint( function( direction ) {
+
+					if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+						setTimeout(function() {
+							explore3.find('.to-animate').each(function( k ) {
+								var el = $(this);
+
+								setTimeout ( function () {
+									el.addClass('fadeInUp animated');
+								},  k * 200, 'easeInOutExpo' );
+
+							});
+						}, 200);
+
+						setTimeout(function() {
+							explore3.find('.to-animate-2').each(function( k ) {
+								var el = $(this);
+
+								setTimeout ( function () {
+									el.addClass('bounceIn animated');
+								},  k * 200, 'easeInOutExpo' );
+
+							});
+						}, 700);
+
+						setTimeout(function() {
+							explore3.find('.to-animate-3').each(function( k ) {
+								var el = $(this);
+
+								setTimeout ( function () {
+									el.addClass('fadeInRight animated');
+								},  k * 200, 'easeInOutExpo' );
+
+							});
+						}, 1000);
+
+
+						$(this.element).addClass('animated');
+
+					}
+				} , { offset: '80%' } );
+
+			}
+		};
+
+
+			var explore4Animate = function() {
+
+				var explore4 = $('#fh5co-explore4');
+				if ( explore4.length > 0 ) {
+
+					explore4.waypoint( function( direction ) {
+
+						if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+							setTimeout(function() {
+								explore4.find('.to-animate').each(function( k ) {
+									var el = $(this);
+
+									setTimeout ( function () {
+										el.addClass('fadeInUp animated');
+									},  k * 200, 'easeInOutExpo' );
+
+								});
+							}, 200);
+
+							setTimeout(function() {
+								explore4.find('.to-animate-2').each(function( k ) {
+									var el = $(this);
+
+									setTimeout ( function () {
+										el.addClass('bounceIn animated');
+									},  k * 200, 'easeInOutExpo' );
+
+								});
+							}, 700);
+
+							setTimeout(function() {
+								explore4.find('.to-animate-3').each(function( k ) {
+									var el = $(this);
+
+									setTimeout ( function () {
+										el.addClass('fadeInRight animated');
+									},  k * 200, 'easeInOutExpo' );
+
+								});
+							}, 1000);
+
+
+							$(this.element).addClass('animated');
+
+						}
+					} , { offset: '80%' } );
+
+				}
+			};
 
 	var gettingStartedAnimate = function() {
 		var started = $('.getting-started-1');
@@ -562,6 +723,9 @@
 		homeAnimate();
 		teaserAnimate();
 		exploreAnimate();
+		explore2Animate();
+		explore3Animate();
+		explore4Animate();
 		gettingStartedAnimate();
 		pricingAnimate();
 		servicesAnimate();
