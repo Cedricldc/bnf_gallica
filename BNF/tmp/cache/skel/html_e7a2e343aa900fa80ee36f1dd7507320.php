@@ -3,12 +3,12 @@
 /*
  * Squelette : ../prive/themes/spip/forms.css.html
  * Date :      Fri, 07 Apr 2017 13:07:03 GMT
- * Compile :   Mon, 22 May 2017 21:03:11 GMT
+ * Compile :   Fri, 26 May 2017 15:59:39 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../prive/themes/spip/forms.css.html
-// Temps de compilation total: 5.839 ms
+// Temps de compilation total: 4.622 ms
 //
 
 function html_e7a2e343aa900fa80ee36f1dd7507320($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

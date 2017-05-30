@@ -3,12 +3,12 @@
 /*
  * Squelette : squelettes/inclure/tete.html
  * Date :      Thu, 25 May 2017 20:30:30 GMT
- * Compile :   Fri, 26 May 2017 08:26:48 GMT
+ * Compile :   Sat, 27 May 2017 13:35:47 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/tete.html
-// Temps de compilation total: 0.501 ms
+// Temps de compilation total: 16.990 ms
 //
 
 function html_3edeb0c0009a954f6b6f26ac5b638b80($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

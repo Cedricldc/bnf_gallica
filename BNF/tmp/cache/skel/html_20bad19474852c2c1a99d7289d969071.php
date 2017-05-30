@@ -2,9 +2,9 @@
 
 /*
  * Squelette : squelettes/sommaire.html
- * Date :      Thu, 25 May 2017 19:41:48 GMT
- * Compile :   Fri, 26 May 2017 08:26:48 GMT
- * Boucles :   teaser, histoire, introduction, voy1, cartier, voy2, voyage2, voy3, voyage3, mcautTeam, autTeam, team
+ * Date :      Sat, 27 May 2017 13:33:41 GMT
+ * Compile :   Sat, 27 May 2017 13:35:47 GMT
+ * Boucles :   teaser, histoire, voy1, cartier, voy2, voyage2, voy3, voyage3, mcautTeam, autTeam, team
  */ 
 
 function BOUCLEteaserhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &$doublons, &$Numrows, $SP) {
@@ -81,13 +81,14 @@ function BOUCLEhistoirehtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &$
 		$command['groupby'] = array();
 		$command['select'] = array("articles.titre",
 		"articles.soustitre",
+		"articles.texte",
 		"articles.lang");
 		$command['orderby'] = array();
 		$command['where'] = 
 			array(
 quete_condition_statut('articles.statut','publie,prop,prepa/auteur','publie',''), 
 quete_condition_postdates('articles.date',''), 
-			array('=', 'articles.id_article', "7"));
+			array('=', 'articles.id_article', "6"));
 		$command['join'] = array();
 		$command['limit'] = '';
 		$command['having'] = 
@@ -115,11 +116,16 @@ quete_condition_postdates('articles.date',''),
                       <h2 class="to-animate">' .
 interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, $Pile[0])) .
 '</h2>
-                      <h3 class="to-animate">' .
+                      <h3 class="to-animate subtitle"><i>"' .
 interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
-'</h3>
+'"</i></h3>
                   </div>
               </div>
+                  <div class="to-animate" style="text-align: justify;">
+                    <p>' .
+interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
+'</p><br>
+                  </div>
             ');
 		lang_select();
 	}
@@ -129,64 +135,6 @@ interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
 	if (defined("_BOUCLE_PROFILER")
 	AND 1000*($timer = (time()+microtime())-$timer) > _BOUCLE_PROFILER)
 		spip_log(intval(1000*$timer)."ms BOUCLEhistoire @ squelettes/sommaire.html","profiler"._LOG_AVERTISSEMENT);
-	return $t0;
-}
-
-
-function BOUCLEintroductionhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &$doublons, &$Numrows, $SP) {
-
-	static $command = array();
-	static $connect;
-	$command['connect'] = $connect = '';
-	if (!isset($command['table'])) {
-		$command['table'] = 'articles';
-		$command['id'] = 'introduction';
-		$command['from'] = array('articles' => 'spip_articles');
-		$command['type'] = array();
-		$command['groupby'] = array();
-		$command['select'] = array("articles.texte",
-		"articles.lang",
-		"articles.titre");
-		$command['orderby'] = array();
-		$command['where'] = 
-			array(
-quete_condition_statut('articles.statut','publie,prop,prepa/auteur','publie',''), 
-quete_condition_postdates('articles.date',''), 
-			array('=', 'articles.id_article', "6"));
-		$command['join'] = array();
-		$command['limit'] = '';
-		$command['having'] = 
-			array();
-	}
-	if (defined("_BOUCLE_PROFILER")) $timer = time()+microtime();
-	$t0 = "";
-	// REQUETE
-	$iter = IterFactory::create(
-		"SQL",
-		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','introduction',59,$GLOBALS['spip_lang'])
-	);
-	if (!$iter->err()) {
-	lang_select($GLOBALS['spip_lang']);
-	$SP++;
-	// RESULTATS
-	while ($Pile[$SP]=$iter->fetch()) {
-
-		lang_select_public($Pile[$SP]['lang'], '', $Pile[$SP]['titre']);
-		$t0 .= (
-'
-      							           <p class="to-animate">' .
-interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
-'</p>
-      							        ');
-		lang_select();
-	}
-	lang_select();
-	$iter->free();
-	}
-	if (defined("_BOUCLE_PROFILER")
-	AND 1000*($timer = (time()+microtime())-$timer) > _BOUCLE_PROFILER)
-		spip_log(intval(1000*$timer)."ms BOUCLEintroduction @ squelettes/sommaire.html","profiler"._LOG_AVERTISSEMENT);
 	return $t0;
 }
 
@@ -222,7 +170,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy1',71,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy1',73,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -239,9 +187,9 @@ quete_condition_postdates('articles.date',''),
 interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, $Pile[0])) .
 '</h2>
                             <div class="col-md-8 col-md-offset-2 subtext">
-                                <h3 class="to-animate">' .
+                                <h3 class="to-animate subtitle"><i>' .
 interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
-'</h3>
+'</i></h3>
                             </div>
                         </div>
                     </div>
@@ -289,7 +237,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','cartier',84,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','cartier',85,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -300,9 +248,11 @@ quete_condition_postdates('articles.date',''),
 		lang_select_public($Pile[$SP]['lang'], '', $Pile[$SP]['titre']);
 		$t0 .= (
 '
-            							        <p class="to-animate colonnetexte">' .
+                              <div class="to-animate" style="text-align: justify;">
+                                <p>' .
 interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
-'</p>
+'</p><br>
+                              </div>
             							    ');
 		lang_select();
 	}
@@ -347,7 +297,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy2',93,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy2',96,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -365,9 +315,9 @@ interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, 
 '</h2>
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2 subtext">
-                                        <h3 class="to-animate">' .
+                                        <h3 class="to-animate subtitle"><i>' .
 interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
-'</h3>
+'</i></h3>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +366,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage2',109,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage2',114,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -427,9 +377,11 @@ quete_condition_postdates('articles.date',''),
 		lang_select_public($Pile[$SP]['lang'], '', $Pile[$SP]['titre']);
 		$t0 .= (
 '
-							                       <p>' .
+                                <div class="to-animate" style="text-align: justify;">
+                                  <p>' .
 interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
-'</p>
+'</p><br>
+                                </div>
 							                  ');
 		lang_select();
 	}
@@ -474,7 +426,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy3',119,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voy3',126,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -492,9 +444,9 @@ interdire_scripts(typo(supprimer_numero($Pile[$SP]['titre']), "TYPO", $connect, 
 '</h2>
                                     <div class="row">
                                         <div class="col-md-8 col-md-offset-2 subtext">
-                                            <h3 class="to-animate">' .
+                                            <h3 class="to-animate subtitle"><i>' .
 interdire_scripts(typo($Pile[$SP]['soustitre'], "TYPO", $connect, $Pile[0])) .
-'</h3>
+'</i></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -543,7 +495,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage3',135,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','voyage3',143,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -554,9 +506,11 @@ quete_condition_postdates('articles.date',''),
 		lang_select_public($Pile[$SP]['lang'], '', $Pile[$SP]['titre']);
 		$t0 .= (
 '
-                                    <p>' .
+                                <div class="to-animate" style="text-align: justify;">
+                                  <p>' .
 interdire_scripts(propre($Pile[$SP]['texte'], $connect, $Pile[0])) .
-'</p>
+'</p><br>
+                                </div>
                                 ');
 		lang_select();
 	}
@@ -599,7 +553,7 @@ function BOUCLEmcautTeamhtml_20bad19474852c2c1a99d7289d969071(&$Cache, &$Pile, &
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','mcautTeam',163,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','mcautTeam',175,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	$SP++;
@@ -657,7 +611,7 @@ quete_condition_statut('auteurs.statut','!5poubelle','!5poubelle',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','autTeam',158,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','autTeam',170,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	$SP++;
@@ -738,7 +692,7 @@ quete_condition_postdates('articles.date',''),
 	$iter = IterFactory::create(
 		"SQL",
 		$command,
-		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','team',146,$GLOBALS['spip_lang'])
+		array('squelettes/sommaire.html','html_20bad19474852c2c1a99d7289d969071','team',158,$GLOBALS['spip_lang'])
 	);
 	if (!$iter->err()) {
 	lang_select($GLOBALS['spip_lang']);
@@ -782,7 +736,7 @@ BOUCLEautTeamhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 
 //
 // Fonction principale du squelette squelettes/sommaire.html
-// Temps de compilation total: 9.435 ms
+// Temps de compilation total: 71.098 ms
 //
 
 function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -801,9 +755,7 @@ function html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons = array(
 ?'.'>
 
 
-        <section id="fh5co-home" data-section="home" style="background-image: url(' .
-find_in_path('images/cartebglowco.jpg') .
-');background-size:100%; background-repeat: no-repeat; background-color: #121036;" data-stellar-background-ratio="1.5">
+        <section id="fh5co-home" data-section="home" data-stellar-background-ratio="1.5">
             <div class="container">
                 <div class="text-wrap">
                     <div class="text-inner">
@@ -853,13 +805,14 @@ BOUCLEteaserhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Num
             ' .
 BOUCLEhistoirehtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
+          </div>
+          <img class="full-image to-animate" src="' .
+find_in_path('images/atlas_monde1920.jpg') .
+'"/>
+          <div class="container">
             <div class="fh5co-project">
-                <div id="map1" class="to-animate mapleaflet"></div>
                 <div class="col-md-12">
-                    <span class="position" style="text-align:justify">
-                            ' .
-BOUCLEintroductionhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
-'
+                    <span class="position">
   							          </span>
                 </div>
               </div>
@@ -872,9 +825,8 @@ BOUCLEintroductionhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons
                 ' .
 BOUCLEvoy1html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
-                    <!--image en background?-->
-                    <div id="map2" class="to-animate mapleaflet"></div>
-                    <span class="position" style="text-align:justify">
+                    <div id="map1" class="to-animate mapleaflet"></div>
+                    <span class="position">
                               ' .
 BOUCLEcartierhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
@@ -888,11 +840,13 @@ BOUCLEcartierhtml_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
 BOUCLEvoy2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
             </div>
+            <div class="to-animate">
               <img class=full-image src="' .
 find_in_path('images/map3.jpg') .
 '"/>
+            </div>
             <div class="container">
-                        <span class="position" style="text-align:justify">
+                        <span class="position">
                                 ' .
 BOUCLEvoyage2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
@@ -906,17 +860,20 @@ BOUCLEvoyage2html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Nu
                         ' .
 BOUCLEvoy3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
+                            <div id="map2" class="to-animate mapleaflet"></div>
                             <div class="col-md-12">
                                 <div class="project-grid to-animate-2" style="background-image:  url(' .
 find_in_path('images/homemm.jpg') .
 ');">
                                 </div>
-                                <span class="position" style="text-align:justify">
+                                <span class="position">
                                 ' .
 BOUCLEvoyage3html_20bad19474852c2c1a99d7289d969071($Cache, $Pile, $doublons, $Numrows, $SP) .
 '
                               </span>
                             </div>
+
+
                 </div>
         </section>
 
@@ -949,7 +906,7 @@ find_in_path('images/app2.png') .
 '" alt="application 2"/>
                                             </div>
                                             <a href="' .
-find_in_path('page_application_mobile.html') .
+find_in_path('#teaser') .
 '" class="btn btn-default btn-lg to-animate">Téléchargez !</a>
                                         </div>
                                     </div>
@@ -960,11 +917,11 @@ find_in_path('page_application_mobile.html') .
                     </section>
                             ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',203,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/pied') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',215,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
                                 ' .
 
-'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',204,$GLOBALS[\'spip_lang\'])), _request("connect"));
+'<'.'?php echo recuperer_fond( ' . argumenter_squelette('inclure/fin') . ', array(\'lang\' => ' . argumenter_squelette($GLOBALS["spip_lang"]) . '), array("compil"=>array(\'squelettes/sommaire.html\',\'html_20bad19474852c2c1a99d7289d969071\',\'\',216,$GLOBALS[\'spip_lang\'])), _request("connect"));
 ?'.'>
 ');
 

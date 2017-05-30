@@ -13,7 +13,7 @@ mymap2.on('focus', function() {
 mymap2.on('blur', function() {
     mymap2.scrollWheelZoom.disable();
 });
-
+/*
 //add markerColor
 var userMarker = L.AwesomeMarkers.icon({
     icon: 'user',
@@ -41,10 +41,9 @@ var form = '<form class="pure-form pure-form-aligned">'+
 "<option>Aventure</option>"+
 "<option>Voyage</option>"+
 "<option >Anecdote</option>"+
-"<option >Cuisine</option>"+
 "<option >Histoire</option>"+
 "<option >Informations</option>"+
-"<option >Avis</option>"+
+"<option >Autre</option>"+
 "</select>"+
 '</div>'+
 '<div class="pure-control-group">'+
@@ -71,7 +70,7 @@ var form = '<form class="pure-form pure-form-aligned">'+
 if (typeof position !== 'undefined') {
   document.getElementById('latlng').value = position;
 }
-
+*/
 
 
 

@@ -2,13 +2,13 @@
 
 /*
  * Squelette : squelettes/inclure/pied.html
- * Date :      Sun, 21 May 2017 16:52:19 GMT
- * Compile :   Fri, 26 May 2017 08:26:48 GMT
+ * Date :      Sat, 27 May 2017 11:34:40 GMT
+ * Compile :   Sat, 27 May 2017 13:35:47 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette squelettes/inclure/pied.html
-// Temps de compilation total: 0.087 ms
+// Temps de compilation total: 0.051 ms
 //
 
 function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {
@@ -23,11 +23,11 @@ function html_b878135c25670f91695b26160af4b123($Cache, $Pile, $doublons = array(
 
 			 <section id="fh5co-logo" data-section="logo">
 		<div class="fh5co-logo"></div>
-		<div class="container"></div>
+		<div class="container to-animate">
       <center><p><img class="size-full wp-image-1201 alignnone" src="squelettes/images/boat_logo_white2.svg" alt="" width="160" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/logo8.png" alt="" width="250" height="160" />&nbsp;&nbsp;&nbsp;&nbsp; <img class="size-full wp-image-1201 alignnone" src="squelettes/images/Logo_BnF.svg" alt="" height="160"/></p>
-
+</div>
   <br>
-        <div class="container text-center">
+        <div class="container text-center to-animate">
             <p>Copyright 2017&copy; La France en Amérique</p>
 	    </div>
 				    <!-- Formulaire de contact

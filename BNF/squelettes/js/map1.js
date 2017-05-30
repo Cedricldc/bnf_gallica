@@ -33,6 +33,12 @@ L.marker([80.82, -65.90], {
     .addTo(mymap)
     .bindPopup("Départ du port de Saint-Malo le 20 avril 1534. Jacques Cartier est à la tête d'une expédition composée de deux petits navires et d'une soixantaine d'hommes.");
 
+L.marker([80.92843, -71.05957], {
+        icon: redMarker,
+    })
+    .addTo(mymap)
+    .bindPopup("Départ du port de Saint-Malo le 20 avril 1534. Jacques Cartier est à la tête d'une expédition composée de deux petits navires et d'une soixantaine d'hommes.");
+
 L.marker([82.89, -160.13], {
         icon: redMarker,
     })

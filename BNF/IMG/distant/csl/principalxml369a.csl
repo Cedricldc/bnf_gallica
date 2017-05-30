@@ -2329,17 +2329,17 @@ Sont déjà proposés :
 <archive id="adminer_dans_spip.zip" dtd="plugin">
 <zip>
 	<file>adminer_dans_spip.zip</file>
-	<size>265158</size>
-	<date>1491149056</date>
+	<size>279752</size>
+	<date>1495861442</date>
 	<source>_plugins_/adminer</source>
-	<last_commit>2017-04-02 18:04:12</last_commit>
+	<last_commit>2017-05-27 07:04:02</last_commit>
 </zip>
 
 <plugin>
 	<nom>Adminer</nom>
 	<slogan>Utiliser Adminer pour explorer la base SPIP</slogan>
-	<auteur>Jakub Vrana (http://www.vrana.cz/), mis en plugin par Fil</auteur>
-	<version>4.2.3.1</version>
+	<auteur>Jakub Vrana ( https://www.vrana.cz ), mis en plugin par Fil</auteur>
+	<version>4.3.1.1</version>
 	<etat>stable</etat>
 	<prefix>adminer</prefix>
 	<description>
@@ -18538,10 +18538,10 @@ Il permet ainsi de définir en fonction d’un secteur particulier, un masque de
 <archive id="diogene.zip" dtd="paquet">
 <zip>
 	<file>diogene.zip</file>
-	<size>88852</size>
-	<date>1494234256</date>
+	<size>88997</size>
+	<date>1495803842</date>
 	<source>_plugins_/diogene/diogene/trunk</source>
-	<last_commit>2017-05-08 11:04:06</last_commit>
+	<last_commit>2017-05-26 15:04:02</last_commit>
 </zip>
 <traductions>
 <traduction module="diogene" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/diogene/diogene/trunk/lang/" reference="fr">
@@ -18578,9 +18578,9 @@ Il permet ainsi de définir en fonction d’un secteur particulier, un masque de
 <paquet
 	prefix="diogene"
 	categorie="edition"
-	version="1.9.0"
+	version="1.9.2"
 	etat="stable"
-	compatibilite="[3.1.0;3.1.*]"
+	compatibilite="[3.0.0;3.1.*]"
 	logo="images/diogene-128.png"
 	schema="0.3.7"
 	documentation="https://www.mediaspip.net/spip.php?article50"
@@ -18592,7 +18592,7 @@ Il permet ainsi de définir en fonction d’un secteur particulier, un masque de
 	<auteur>b_b</auteur>
 	<auteur mail="kent1@arscenic.info" lien="http://www.kent1.info">kent1</auteur>
 
-	<copyright>2010-2016</copyright>
+	<copyright>2010-2017</copyright>
 	<licence lien="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3</licence>
 
 	<pipeline nom="diogene_charger" action="" />
@@ -19038,10 +19038,10 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 <archive id="diogene_gerer_auteurs.zip" dtd="paquet">
 <zip>
 	<file>diogene_gerer_auteurs.zip</file>
-	<size>12471</size>
-	<date>1492524246</date>
+	<size>12464</size>
+	<date>1495785842</date>
 	<source>_plugins_/diogene/diogene_complements/diogene_gerer_auteurs/trunk</source>
-	<last_commit>2017-04-18 16:04:05</last_commit>
+	<last_commit>2017-05-26 10:04:01</last_commit>
 </zip>
 <traductions>
 <traduction module="diogene_gerer_auteurs" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/diogene/diogene_complements/diogene_gerer_auteurs/trunk/lang/" reference="fr">
@@ -19078,7 +19078,7 @@ Permite definir, em função de um setor particular, uma máscara de formulário
 <paquet
 	prefix="diogene_gerer_auteurs"
 	categorie="edition"
-	version="2.1.0"
+	version="2.1.1"
 	etat="stable"
 	compatibilite="[3.0.0;3.0.*]"
 	logo="images/diogene-128.png"
@@ -21400,10 +21400,10 @@ _ En plus d'avoir ses cours en ligne, on peut donc faire des tests notés, voir 
 <archive id="emballe_medias.zip" dtd="paquet">
 <zip>
 	<file>emballe_medias.zip</file>
-	<size>168256</size>
-	<date>1494234258</date>
+	<size>168245</size>
+	<date>1495793046</date>
 	<source>_plugins_/emballe_medias/emballe_medias/trunk</source>
-	<last_commit>2017-05-08 11:04:06</last_commit>
+	<last_commit>2017-05-26 12:04:06</last_commit>
 </zip>
 <traductions>
 <traduction module="emballe_medias" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/emballe_medias/emballe_medias/trunk/lang/" reference="fr">
@@ -39478,16 +39478,16 @@ Le modèle a été testé sous Spip 3.1, mais il n'y a pas à priori de raison p
 <archive id="medias_responsive_mod.zip" dtd="paquet">
 <zip>
 	<file>medias_responsive_mod.zip</file>
-	<size>17929</size>
-	<date>1495105442</date>
+	<size>17946</size>
+	<date>1495778642</date>
 	<source>_plugins_/medias_responsive_mod</source>
-	<last_commit>2017-05-18 13:04:01</last_commit>
+	<last_commit>2017-05-26 08:04:01</last_commit>
 </zip>
 
 <paquet
 	prefix="medias_responsive_mod"
 	categorie="outil"
-	version="1.8.2"
+	version="1.9.0"
 	etat="stable"
 	compatibilite="[3.0.0;3.1.*]"
 	logo="imgs/medias_responsive.png"
@@ -65907,10 +65907,10 @@ _ Ikonu vytvoril [Pawel Kadysz->http://oneseventyseven.com/]
 <archive id="spipmotion.zip" dtd="paquet">
 <zip>
 	<file>spipmotion.zip</file>
-	<size>115169</size>
-	<date>1494234276</date>
+	<size>115466</size>
+	<date>1495796644</date>
 	<source>_plugins_/spipmotion/trunk</source>
-	<last_commit>2017-05-08 11:04:06</last_commit>
+	<last_commit>2017-05-26 13:04:03</last_commit>
 </zip>
 <traductions>
 <traduction module="paquet-spipmotion" gestionnaire="salvatore" url="https://trad.spip.net" source="svn://zone.spip.org/spip-zone/_plugins_/spipmotion/trunk/lang/" reference="fr">
@@ -65943,9 +65943,9 @@ _ Ikonu vytvoril [Pawel Kadysz->http://oneseventyseven.com/]
 <paquet
 	prefix="spipmotion"
 	categorie="multimedia"
-	version="1.6.3"
+	version="1.7.0"
 	etat="stable"
-	compatibilite="[3.0.0;3.0.*]"
+	compatibilite="[3.0.0;3.2.*]"
 	logo="images/spipmotion.png"
 	schema="1.3.0"
 	documentation="https://www.mediaspip.net/technical-documentation/plugins-used-by-mediaspip/spipmotion/"

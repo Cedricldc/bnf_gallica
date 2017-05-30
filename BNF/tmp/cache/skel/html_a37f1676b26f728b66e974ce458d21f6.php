@@ -3,12 +3,12 @@
 /*
  * Squelette : ../prive/squelettes/head/dist.html
  * Date :      Fri, 07 Apr 2017 13:07:03 GMT
- * Compile :   Mon, 22 May 2017 21:03:11 GMT
+ * Compile :   Fri, 26 May 2017 15:59:39 GMT
  * Boucles :   
  */ 
 //
 // Fonction principale du squelette ../prive/squelettes/head/dist.html
-// Temps de compilation total: 0.537 ms
+// Temps de compilation total: 0.464 ms
 //
 
 function html_a37f1676b26f728b66e974ce458d21f6($Cache, $Pile, $doublons = array(), $Numrows = array(), $SP = 0) {

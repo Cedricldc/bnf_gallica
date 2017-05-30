@@ -273,6 +273,27 @@ hr {
   width: 100%;
   color: #fff;
 }
+
+@media only screen and (min-width: 500px) {
+#fh5co-home {
+  background-image: url('../images/cartebglowco.jpg');
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-color: #121036;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+#fh5co-home {
+  background-image: url('../images/cartebglowcosm.jpg');
+  background-position: 0px -25px !important;
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-color: #121036;
+  width:100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #fh5co-home {
     background-position: center center;
@@ -302,6 +323,7 @@ hr {
 @media screen and (max-width: 768px) {
   #fh5co-home, #fh5co-home .text-wrap {
     height: 500px;
+    padding-top : 20%;
   }
 }
 #fh5co-home .text-wrap {
@@ -802,9 +824,10 @@ background-color: #090217;
   }
 }
 .section-heading h3 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 1.2px;
   position: relative;
   display: block;
   padding-bottom: 30px;
@@ -970,8 +993,9 @@ background-color: #090217;
   background: #8C7676;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background: #393e46 !important;
-  color: #fff;
+  background: #fff !important;
+  color: #090217;
+  text-decoration: underline;
   outline: none !important;
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
@@ -1147,6 +1171,14 @@ background-color: #090217;
 
 }
 
+@media screen and (max-width: 500px){
+  .arrow {
+    display: none;
+  }
+
+}
+
+
 .bounce {
 	-webkit-animation-name: bounce;
 	-moz-animation-name: bounce;
@@ -1196,6 +1228,14 @@ animation-duration:2s;
   height: 500px;
 }
 
+@media screen and (max-width: 500px) {
+.mapleaflet {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+}
+}
+
 .full-image {
   width: 100%;
 }
@@ -1241,4 +1281,8 @@ animation-duration:2s;
   .app-visual {
     width: 100%;
   }
+}
+
+.subtitle {
+
 }
